@@ -1,0 +1,3 @@
+summon armor_stand ~ ~-1.35 ~.4 {Tags:["bow"],HandItems:[{id:"minecraft:bow",Count:1b,tag:{Unbreakable:1b}},{}],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Rotation:[270f],Pose:{RightArm:[180f,-10f,90f]},DisabledSlots:4144959}
+summon armor_stand ~ ~-1.9 ~-.4 {Tags:["arrow"],HandItems:[{id:"minecraft:arrow",Count:1b,tag:{Unbreakable:1b}},{}],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Rotation:[270f],Pose:{RightArm:[180f,0f,0f]},DisabledSlots:4144959}
+summon armor_stand ~.4 ~-1.92 ~-.55 {Tags:["arrow"],HandItems:[{id:"minecraft:arrow",Count:1b,tag:{Unbreakable:1b}},{}],Invisible:1b,Invulnerable:1b,NoBasePlate:1b,NoGravity:1b,ShowArms:1b,Rotation:[270f],Pose:{RightArm:[180f,0f,0f]},DisabledSlots:4144959}

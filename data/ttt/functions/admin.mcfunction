@@ -1,0 +1,13 @@
+team join admin
+clear @s[team=admin]
+give @s[team=admin] minecraft:wolf_spawn_egg{display: {Name: '{"text":"Add Spawnpoint"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["spawnpoint"]}} 1
+#give @a[team=admin] minecraft:chicken_spawn_egg{display:{Name:'{"text":"Remove Spawnpoint"}'},Enchantments:[{id:"minecraft:protection",lvl:1s}],EntityTag:{id:"minecraft:armor_stand",NoGravity:1b,Marker:1b,Invisible:1b,Tags:["removespawnpoint"]}} 1
+give @s[team=admin] minecraft:wolf_spawn_egg{display: {Name: '{"text":"Add Name Sign"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["sign"]}} 1
+#give @a[team=admin] minecraft:chicken_spawn_egg{display:{Name:'{"text":"Remove Name Sign"}'},Enchantments:[{id:"minecraft:protection",lvl:1s}],EntityTag:{id:"minecraft:armor_stand",NoGravity:1b,Marker:1b,Invisible:1b,Tags:["removesign"]}} 1
+#give @a[team=admin] minecraft:wolf_spawn_egg{display:{Name:'{"text":"Add Weapon Spawn (Bow)"}'},Enchantments:[{id:"minecraft:protection",lvl:1s}],EntityTag:{id:"minecraft:armor_stand",NoGravity:1b,Marker:1b,Invisible:1b,Tags:["weapon_bow"]}} 1
+give @s[team=admin] minecraft:wolf_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (Rifle)"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["weapon_rifle"]}} 1
+give @s[team=admin] minecraft:wolf_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (Smoke Grenade)"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["weapon_grenade_smoke"]}} 1
+give @s[team=admin] minecraft:wolf_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (Fire Grenade)"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["weapon_grenade_fire"]}} 1
+give @s[team=admin] minecraft:turtle_spawn_egg{display: {Name: '{"text":"Add Breakable Glass Spawner"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["glass"]}} 1
+
+give @s[team=admin] minecraft:chicken_spawn_egg{display: {Name: '{"text":"Remove Any Spawner"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["removeweapon"]}} 1
