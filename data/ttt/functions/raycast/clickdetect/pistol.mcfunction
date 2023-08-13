@@ -13,4 +13,5 @@ execute at @a[scores={click=1,c_ammo_pistol=1..},nbt={SelectedItem: {tag: {pisto
 #remove 1 bullet from magazine
 execute as @a[scores={click=1,c_ammo_pistol=1..},nbt={SelectedItem: {tag: {pistol: 1b}}}] run scoreboard players remove @s c_ammo_pistol 1
 
-
+#* if mag empty
+execute at @a[scores={click=1,t_ammo_pistol=..0},nbt={SelectedItem: {tag: {pistol: 1b}}}] run playsound custom.clipempty_pistol player @a ~ ~ ~ 1 1

@@ -14,6 +14,7 @@ kill @e[tag=placeholder_fire,nbt={OnGround: 1b}]
 
 #* tick the grenade
 execute as @e[tag=primed_fire] run scoreboard players add @s grenadetime 1
+execute at @e[tag=primed_fire,scores={grenadetime=40}] run playsound minecraft:block.fire.ambient block @a ~ ~ ~ 1 1
 execute at @e[tag=primed_fire,scores={grenadetime=40..}] run particle minecraft:flame ~-.5 ~1.6 ~.5 1.5 .2 1.5 0 100 force
 
     #* damage players in range every second

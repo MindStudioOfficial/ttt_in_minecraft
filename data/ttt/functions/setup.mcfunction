@@ -53,6 +53,7 @@ scoreboard objectives add shopping dummy
 
 #grenades -------------------------
 scoreboard objectives add grenadetime dummy
+scoreboard objectives add throw minecraft.used:minecraft.snowball
 
 #gamerules ------------------------
 gamerule keepInventory false

@@ -7,7 +7,7 @@ execute as @e[tag=ammo_rifle] at @s positioned ~ ~ ~ run execute if entity @a[ga
 #* pickup pistol
 execute as @e[tag=pistol] at @s positioned ~ ~ ~ run execute if entity @a[gamemode=adventure,distance=..1] unless entity @a[distance=..1,nbt={Inventory: [{id: "minecraft:carrot_on_a_stick", tag: {pistol: 1b}}]}] run function ttt:weapons/types/giveandkill_pistol
 #* pickup pistol ammo
-execute as @e[tag=ammo_pistol] at @s positioned ~ ~ ~ run execute if entity @a[gamemode=adventure,distance=..1,scores={t_ammo_pistol=..21}] run function ttt:weapons/types/giveandkill_ammo_pistol
+execute as @e[tag=ammo_pistol] at @s positioned ~ ~ ~ run execute if entity @a[gamemode=adventure,distance=..1,scores={t_ammo_pistol=..14}] run function ttt:weapons/types/giveandkill_ammo_pistol
 
 
 #* grenades

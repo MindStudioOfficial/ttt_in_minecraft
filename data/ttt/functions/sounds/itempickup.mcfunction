@@ -1,0 +1,1 @@
+playsound minecraft:custom.itempickup player @a ~ ~ ~ 1 1 1

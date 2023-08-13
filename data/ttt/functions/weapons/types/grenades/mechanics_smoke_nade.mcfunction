@@ -14,5 +14,12 @@ kill @e[tag=placeholder_smoke,nbt={OnGround: 1b}]
 
 #* tick the grenade
 execute as @e[tag=primed_smoke] run scoreboard players add @s grenadetime 1
+execute at @e[tag=primed_smoke,scores={grenadetime=100}] run playsound custom.sg_explode block @a ~ ~ ~ 1 1
+
+#* extiguish fire nade
+execute at @e[tag=primed_smoke,scores={grenadetime=100}] if entity @e[tag=primed_fire,distance=..3] run playsound minecraft:block.fire.extinguish block @a ~ ~ ~ 1 1
+execute at @e[tag=primed_smoke,scores={grenadetime=100}] if entity @e[tag=primed_fire,distance=..3] run kill @e[tag=primed_fire,distance=..3]
+
+#* smoke particle
 execute at @e[tag=primed_smoke,scores={grenadetime=100..}] run particle minecraft:squid_ink ~ ~1.9 ~-.5 1.5 1.5 1.5 0 500 force
 execute as @e[tag=primed_smoke,scores={grenadetime=500..}] run kill @s

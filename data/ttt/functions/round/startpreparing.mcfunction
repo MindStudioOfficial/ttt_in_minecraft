@@ -21,9 +21,8 @@ function ttt:weapons/summon_pickup_items
 
 effect give @e[team=!admin] minecraft:regeneration 30 100 true
 
-#resetammo
-scoreboard players set @a c_ammo_rifle 0
-scoreboard players set @a t_ammo_rifle 0
+function ttt:weapons/resetammo
+
 
 #reset shops
 function ttt:shops/resetshops
