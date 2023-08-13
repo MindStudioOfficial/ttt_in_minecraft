@@ -2,9 +2,10 @@
 
 This datapack adds TTT from Garry's Mod to your Minecraft World
 
+Use this datapack together with the [resourcepack](https://github.com/MindStudioOfficial/ttt_in_minecraft_resourcepack) for weapon textures and sounds.
 ## Supported MC Versions
 
-- 1.20.X
+- 1.20.x
 
 ## Features
 
@@ -48,6 +49,7 @@ Run `/function ttt:noadmin` to remove the items and remove the `admin` team
 - [ ] Traitor Room Doors
 - [ ] Role Reveal
 - [ ] Dropped Item Pickup
+- [ ] C4
 - [ ] Poison Nade
 - [ ] Blindness Nade
 - [ ] Stun Nade
