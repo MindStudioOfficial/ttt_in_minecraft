@@ -8,7 +8,7 @@ execute at @p[scores={click=1,c_ammo_pistol=1..},nbt={SelectedItem: {tag: {pisto
 execute at @p[scores={click=1,c_ammo_pistol=1..},nbt={SelectedItem: {tag: {pistol: 1b}}}] at @e[tag=ray_pistol,limit=1,sort=nearest] as @e[tag=ray_pistol,limit=1,sort=nearest] if block ~ ~ ~ air run function ttt:raycast/tp
 
 #SOUND:
-execute at @a[scores={click=1,c_ammo_pistol=1..},nbt={SelectedItem: {tag: {pistol: 1b}}}] run playsound custom.scout_fire-1 player @a ~ ~ ~ 1 1
+execute at @a[scores={click=1,c_ammo_pistol=1..},nbt={SelectedItem: {tag: {pistol: 1b}}}] run playsound custom.fiveseven-1 player @a ~ ~ ~ 1 1
 
 #remove 1 bullet from magazine
 execute as @a[scores={click=1,c_ammo_pistol=1..},nbt={SelectedItem: {tag: {pistol: 1b}}}] run scoreboard players remove @s c_ammo_pistol 1
