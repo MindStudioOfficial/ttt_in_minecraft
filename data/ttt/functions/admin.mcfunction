@@ -1,13 +1,24 @@
+#* gives the admin the spawner items
+
 team join admin
 clear @s[team=admin]
-give @s[team=admin] minecraft:wolf_spawn_egg{display: {Name: '{"text":"Add Spawnpoint"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["spawnpoint"]}} 1
-#give @a[team=admin] minecraft:chicken_spawn_egg{display:{Name:'{"text":"Remove Spawnpoint"}'},Enchantments:[{id:"minecraft:protection",lvl:1s}],EntityTag:{id:"minecraft:armor_stand",NoGravity:1b,Marker:1b,Invisible:1b,Tags:["removespawnpoint"]}} 1
-give @s[team=admin] minecraft:wolf_spawn_egg{display: {Name: '{"text":"Add Name Sign"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["sign"]}} 1
-#give @a[team=admin] minecraft:chicken_spawn_egg{display:{Name:'{"text":"Remove Name Sign"}'},Enchantments:[{id:"minecraft:protection",lvl:1s}],EntityTag:{id:"minecraft:armor_stand",NoGravity:1b,Marker:1b,Invisible:1b,Tags:["removesign"]}} 1
-#give @a[team=admin] minecraft:wolf_spawn_egg{display:{Name:'{"text":"Add Weapon Spawn (Bow)"}'},Enchantments:[{id:"minecraft:protection",lvl:1s}],EntityTag:{id:"minecraft:armor_stand",NoGravity:1b,Marker:1b,Invisible:1b,Tags:["weapon_bow"]}} 1
-give @s[team=admin] minecraft:wolf_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (Rifle)"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["weapon_rifle"]}} 1
-give @s[team=admin] minecraft:wolf_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (Smoke Grenade)"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["weapon_grenade_smoke"]}} 1
-give @s[team=admin] minecraft:wolf_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (Fire Grenade)"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["weapon_grenade_fire"]}} 1
-give @s[team=admin] minecraft:turtle_spawn_egg{display: {Name: '{"text":"Add Breakable Glass Spawner"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["glass"]}} 1
 
-give @s[team=admin] minecraft:chicken_spawn_egg{display: {Name: '{"text":"Remove Any Spawner"}'}, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:armor_stand", NoGravity: 1b, Marker: 1b, Invisible: 1b, Tags: ["removeweapon"]}} 1
+#* spawnpoint
+give @s[team=admin] wolf_spawn_egg{display: {Name: '{"text":"Add Player Spawnpoint"}'}, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["spawnpoint", "spawner"], CustomName: '{"text":"Spawnpoint","color":"gold"}'}} 1
+
+#* score holder sign
+give @s[team=admin] wolf_spawn_egg{display: {Name: '{"text":"Add Score Sign"}'}, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["sign", "spawner"], CustomName: '{"text":"Sign Spawner","color":"gold"}'}} 1
+
+#* weapons
+give @s[team=admin] wolf_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (Rifle)"}'}, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["weapon_rifle", "spawner"], CustomName: '{"text":"Rifle Spawner","color":"gold"}'}} 1
+
+give @s[team=admin] wolf_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (Pistol)"}'}, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["weapon_pistol", "spawner"], CustomName: '{"text":"Pistol Spawner","color":"gold"}'}} 1
+
+give @s[team=admin] wolf_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (Smoke Grenade)"}'}, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["weapon_grenade_smoke", "spawner"], CustomName: '{"text":"Smoke Spawner","color":"gold"}'}} 1
+
+give @s[team=admin] wolf_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (Fire Grenade)"}'}, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["weapon_grenade_fire", "spawner"], CustomName: '{"text":"Fire Spawner","color":"gold"}'}} 1
+
+give @s[team=admin] turtle_spawn_egg{display: {Name: '{"text":"Add Breakable Glass Spawner"}'}, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["glass", "spawner"], CustomName: '{"text":"Glass Spawner","color":"gold"}'}} 1
+
+#* remove
+give @s[team=admin] chicken_spawn_egg{display: {Name: '{"text":"Remove Any Spawner"}'}, HideFlags: 1, removespawner: 1b, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["removespawner"], CustomName: '{"text":"Spawner Remover","color":"gold"}'}} 1

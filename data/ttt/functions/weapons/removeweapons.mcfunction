@@ -1,6 +1,0 @@
-kill @e[tag=bow]
-kill @e[tag=arrow]
-kill @e[tag=rifle]
-kill @e[tag=ammo_rifle]
-kill @e[tag=grenade_smoke]
-kill @e[tag=grenade_fire]

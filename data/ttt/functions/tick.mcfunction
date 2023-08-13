@@ -22,6 +22,8 @@ function ttt:weapons/types/grenades/grenade_mechanics
 function ttt:weapons/ammo
 function ttt:inventory
 
+function ttt:highlightspawner
+
 #shops
 function ttt:shops/t_shop
 

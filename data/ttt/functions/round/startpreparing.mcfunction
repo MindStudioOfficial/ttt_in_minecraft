@@ -16,8 +16,8 @@ xp set @a 0 points
 
 title @a title ""
 clear @a[team=!admin]
-function ttt:weapons/removeweapons
-function ttt:weapons/weapons
+function ttt:weapons/remove_pickup_items
+function ttt:weapons/summon_pickup_items
 
 effect give @e[team=!admin] minecraft:regeneration 30 100 true
 

@@ -76,5 +76,10 @@ scoreboard objectives add currentammo dummy
 scoreboard objectives add totalammo dummy
 scoreboard objectives add reloaddelay dummy
 
+#* c_ = current ammo (in weapon)
+#* t_ = total ammo  (in mag)
 scoreboard objectives add c_ammo_rifle dummy
 scoreboard objectives add t_ammo_rifle dummy
+
+scoreboard objectives add c_ammo_pistol dummy
+scoreboard objectives add t_ammo_pistol dummy
