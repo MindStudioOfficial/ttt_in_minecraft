@@ -19,9 +19,9 @@ team modify conf_detective color blue
 team modify conf_innocent color green
 team modify conf_traitor color dark_red
 
-team modify conf_innocent prefix {"text":"Confirmed Dead ","color":"gray"}
-team modify conf_traitor prefix {"text":"Confirmed Dead ","color":"gray"}
-team modify conf_detective prefix {"text":"Confirmed Dead ","color":"gray"}
+team modify conf_innocent prefix [{"text":"Confirmed Dead ","color":"gray"},{"text":"Innocent ","color":"green"}]
+team modify conf_traitor prefix [{"text":"Confirmed Dead ","color":"gray"},{"text":"Traitor ","color":"dark_red"}]
+team modify conf_detective prefix [{"text":"Confirmed Dead ","color":"gray"},{"text":"Detective ","color":"blue"}]
 
 team modify preparing friendlyFire false
 

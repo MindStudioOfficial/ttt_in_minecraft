@@ -11,6 +11,7 @@ This datapack adds TTT from Garry's Mod to your Minecraft World
 ### Weapons
 
 - Rifle with Ammo
+- Pistol with Ammo
 
 ### Grenades
 
@@ -41,3 +42,14 @@ Run `/function ttt:noadmin` to remove the items and remove the `admin` team
 - Innocent
 - Traitor
 - Detective
+
+## TODO:
+
+- [ ] Traitor Room Doors
+- [ ] Role Reveal
+- [ ] Dropped Item Pickup
+- [ ] Poison Nade
+- [ ] Blindness Nade
+- [ ] Stun Nade
+- [ ] Silenced Pistol
+- [ ] OneHitBow

@@ -7,8 +7,9 @@ scoreboard players set @e[tag=sign] i 0
 
 #team join preparing @a[team=!admin]
 gamemode adventure @a[team=!admin]
-kill @e[tag=head]
+kill @e[tag=corpse]
 kill @e[tag=feet]
+kill @e[tag=head]
 kill @e[type=item]
 xp set @a 0 levels
 xp set @a 0 points

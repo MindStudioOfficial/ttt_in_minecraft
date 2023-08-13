@@ -5,16 +5,16 @@ scoreboard players set @e[tag=sign] rtseconds 0
 scoreboard players set @e[tag=sign] rtminutes 0
 scoreboard players set @e[tag=sign] i 0
 
-team join traitor @r[team=preparing]
-team join innocent @r[team=preparing]
-team join innocent @r[team=preparing]
-team join innocent @r[team=preparing]
-team join traitor @r[team=preparing]
-team join detective @r[team=preparing]
-team join innocent @r[team=preparing]
-team join traitor @r[team=preparing]
-team join innocent @r[team=preparing]
-team join traitor @r[team=preparing]
+team join traitor @r[team=preparing,gamemode=adventure]
+team join innocent @r[team=preparing,gamemode=adventure]
+team join innocent @r[team=preparing,gamemode=adventure]
+team join innocent @r[team=preparing,gamemode=adventure]
+team join traitor @r[team=preparing,gamemode=adventure]
+team join detective @r[team=preparing,gamemode=adventure]
+team join innocent @r[team=preparing,gamemode=adventure]
+team join traitor @r[team=preparing,gamemode=adventure]
+team join innocent @r[team=preparing,gamemode=adventure]
+team join traitor @r[team=preparing,gamemode=adventure]
 
 kill @e[tag=spawned]
 kill @e[tag=head]
