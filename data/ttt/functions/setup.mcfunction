@@ -64,6 +64,7 @@ gamerule naturalRegeneration false
 gamerule sendCommandFeedback false
 gamerule spawnRadius 0
 gamerule commandBlockOutput false
+gamerule announceAdvancements false
 
 #set default scores. Placeholder sign required.
 execute at @e[tag=sign] run setblock ~ ~ ~ oak_sign
