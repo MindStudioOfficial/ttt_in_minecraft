@@ -34,6 +34,7 @@ Run `/function ttt:admin` to get the spawner items
 - Place grenade spawner
 - Place player spawnpoints
 - Place breakable glass spawner (replaces glass panes at start of round)
+- Place Traitor Doors spawner (place spawner on block below iron_door)
 - Remove any spawner
 
 Run `/function ttt:noadmin` to remove the items and remove the `admin` team
@@ -46,7 +47,6 @@ Run `/function ttt:noadmin` to remove the items and remove the `admin` team
 
 ## TODO:
 
-- [ ] Traitor Room Doors
 - [ ] Role Reveal
 - [ ] Dropped Item Pickup
 - [ ] C4

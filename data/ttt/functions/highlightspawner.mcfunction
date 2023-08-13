@@ -5,3 +5,4 @@ execute as @e[tag=spawnpoint] at @s if entity @a[team=admin,nbt={SelectedItem: {
 execute as @e[tag=sign] at @s if entity @a[team=admin,nbt={SelectedItem: {tag: {removespawner: 1b}}},distance=..50] run particle minecraft:happy_villager ~ ~.5 ~ 0 1 0 0 1 force
 execute as @e[tag=glass,tag=spawner] at @s if entity @a[team=admin,nbt={SelectedItem: {tag: {removespawner: 1b}}},distance=..50] run particle minecraft:glow ~ ~ ~ 0 0 0 0 1 force
 execute as @e[tag=glass,tag=!spawner] at @s if entity @a[team=admin,nbt={SelectedItem: {tag: {removespawner: 1b}}},distance=..50] run particle minecraft:glow_squid_ink ~ ~ ~ 0 0 0 0 1 force
+execute as @e[tag=tdoor,tag=spawner] at @s if entity @a[team=admin,nbt={SelectedItem: {tag: {removespawner: 1b}}},distance=..50] run particle minecraft:portal ~ ~.5 ~ 0.1 0 0.1 0 10 force

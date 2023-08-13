@@ -28,3 +28,5 @@ function ttt:shops/t_shop
 kill @e[type=minecraft:experience_orb]
 
 function ttt:removespawner
+
+function ttt:t_door
