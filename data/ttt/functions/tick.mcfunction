@@ -1,7 +1,5 @@
 #COMMANDS IN THIS FUNCTION ARE TICKED 20 TIMES A SECOND
 
-execute as @e[tag=spawnpoint,limit=1,sort=random] at @s if entity @e[tag=sign,scores={roundstage=1}] unless entity @a[distance=..1] if entity @a[team=roundover] run function ttt:respawn
-
 function ttt:death
 function ttt:confirm
 function ttt:roundtimer

@@ -2,6 +2,11 @@
 
 execute if entity @e[tag=sign,scores={roundstage=0}] run function ttt:round/startpreparing
 
+#* respawn players
+# at spawnpoint, if no player close,
+execute as @e[tag=spawnpoint,limit=1,sort=random] at @s if entity @e[tag=sign,scores={roundstage=1}] unless entity @a[distance=..1] if entity @a[team=roundover] run function ttt:respawn
+
+
 execute if entity @e[tag=sign,scores={roundstage=1}] run scoreboard players add @e[tag=sign] i 1
 execute if entity @e[tag=sign,scores={i=20..,roundstage=1}] run scoreboard players remove @e[tag=sign] roundtime 1
 execute if entity @e[tag=sign,scores={i=20..,roundstage=1}] run scoreboard players set @e[tag=sign] i 0
