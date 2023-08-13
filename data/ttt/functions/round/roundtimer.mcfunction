@@ -4,7 +4,7 @@ execute if entity @e[tag=sign,scores={roundstage=0}] run function ttt:round/star
 
 #* respawn players
 # at spawnpoint, if no player close,
-execute as @e[tag=spawnpoint,limit=1,sort=random] at @s if entity @e[tag=sign,scores={roundstage=1}] unless entity @a[distance=..1] if entity @a[team=roundover] run function ttt:respawn
+execute as @e[tag=spawnpoint,limit=1,sort=random] at @s if entity @e[tag=sign,scores={roundstage=1}] unless entity @a[distance=..1] if entity @a[team=roundover] run function ttt:player_respawn
 
 
 execute if entity @e[tag=sign,scores={roundstage=1}] run scoreboard players add @e[tag=sign] i 1

@@ -13,7 +13,6 @@ kill @e[tag=head]
 kill @e[type=item]
 xp set @a 0 levels
 xp set @a 0 points
-#function ttt:respawn
 
 title @a title ""
 clear @a[team=!admin]
@@ -28,6 +27,6 @@ function ttt:weapons/resetammo
 #reset shops
 function ttt:shops/resetshops
 
-function ttt:other/resetglass
+function ttt:other/glass_reset
 
 scoreboard players set @e[tag=sign] roundstage 1
