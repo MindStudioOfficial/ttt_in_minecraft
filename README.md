@@ -47,7 +47,6 @@ Run `/function ttt:noadmin` to remove the items and remove the `admin` team
 
 ## TODO:
 
-- [ ] Dropped Item Pickup
 - [ ] C4
 - [ ] Poison Nade
 - [ ] Blindness Nade
