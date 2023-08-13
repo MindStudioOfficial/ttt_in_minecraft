@@ -1,0 +1,3 @@
+execute if entity @a[team=traitor] run tellraw @a [{"text":"Traitors this round were: ","color":"gold"},{"selector":"@a[team=traitor]","color":"dark_red"}]
+execute if entity @a[team=innocent] run tellraw @a [{"text":"Innocents: ","color":"gold"},{"selector":"@a[team=innocent]","color":"green"}]
+execute if entity @a[team=detective] run tellraw @a [{"text":"Detective: ","color":"gold"},{"selector":"@a[team=detective]","color":"dark_blue"}]

@@ -19,6 +19,7 @@ execute if entity @e[tag=sign,scores={i=20..,roundstage=3}] run scoreboard playe
 execute if entity @e[tag=sign,scores={i=20..,roundstage=3}] run scoreboard players set @e[tag=sign] i 0
 execute if entity @e[tag=sign,scores={roundstage=3,roundtime=..0}] run scoreboard players set @e[tag=sign] roundstage 4
 
+execute if entity @e[tag=sign,scores={roundstage=4}] run function ttt:round/rolereveal
 execute if entity @e[tag=sign,scores={roundstage=4}] run function ttt:round/endround
 
 execute if entity @e[tag=sign,scores={roundstage=5}] run scoreboard players add @e[tag=sign] i 1
