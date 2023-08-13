@@ -8,8 +8,8 @@ function ttt:count/innocentcount
 function ttt:count/traitorcount
 function ttt:count/playercount
 
-execute if entity @e[tag=sign,scores={roundstage=3,roundtime=..410,traitorcount=0}] run function ttt:win
-execute if entity @e[tag=sign,scores={roundstage=3,roundtime=..410,innocentcount=0}] run function ttt:win
+execute if entity @e[tag=sign,scores={roundstage=3,roundtime=..400,traitorcount=0}] run function ttt:win
+execute if entity @e[tag=sign,scores={roundstage=3,roundtime=..400,innocentcount=0}] run function ttt:win
 
 function ttt:weapons/pickup
 function ttt:raycast/clickdetect/tickdetect
