@@ -1,9 +1,0 @@
----Weapons---
-
-  ---Scout---
-  Shot: custom/scout_fire-1
-  Reload: custom/scout_bolt
-
-  ---Shotgun---
-  Shot: custom/xm1014-1
-  Reload: custom/xm1014_insertshell.ogg

@@ -38,6 +38,7 @@ scoreboard objectives add rtzero dummy
 
 scoreboard objectives add i dummy
 scoreboard objectives add 60 dummy
+scoreboard objectives add 20 dummy
 
 #playercount-----------------------
 scoreboard objectives add traitorcount dummy
@@ -55,6 +56,10 @@ scoreboard objectives add shopping dummy
 scoreboard objectives add grenadetime dummy
 scoreboard objectives add throw minecraft.used:minecraft.snowball
 
+#c4 --------------------------------
+scoreboard objectives add c4time dummy
+scoreboard objectives add c4seconds dummy
+
 #gamerules ------------------------
 gamerule keepInventory false
 gamerule doWeatherCycle false
@@ -71,6 +76,7 @@ execute at @e[tag=sign] run setblock ~ ~ ~ oak_sign
 execute as @e[tag=sign] run scoreboard players set @s roundstage -1
 execute as @e[tag=sign] run scoreboard players set @s i 0
 execute as @e[tag=sign] run scoreboard players set @s 60 60
+execute as @e[tag=sign] run scoreboard players set @s 20 20
 
 #Ammo
 

@@ -25,6 +25,7 @@ Use this datapack together with the [resourcepack](https://github.com/MindStudio
 - Medikit (health potion)
 - Baseball Bat (knockback)
 - Quick Escape Pearl (Enderpearl)
+- C4
 
 ### Admin Tools
 
@@ -47,7 +48,6 @@ Run `/function ttt:noadmin` to remove the items and remove the `admin` team
 
 ## TODO:
 
-- [ ] C4
 - [ ] Poison Nade
 - [ ] Blindness Nade
 - [ ] Stun Nade
