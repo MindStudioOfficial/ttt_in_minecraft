@@ -1,4 +1,4 @@
-#preparingtime: (def. 30)
+#*preparingtime: (def. 30) when changed, set regeneration time below to same value
 scoreboard players set @e[tag=sign] roundtime 30
 
 scoreboard players set @e[tag=sign] rtseconds 0
@@ -11,6 +11,7 @@ kill @e[tag=corpse]
 kill @e[tag=feet]
 kill @e[tag=head]
 kill @e[type=item]
+kill @e[tag=c4]
 xp set @a 0 levels
 xp set @a 0 points
 
