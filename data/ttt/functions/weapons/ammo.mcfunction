@@ -16,4 +16,4 @@ execute as @a[nbt={SelectedItem: {tag: {pistol: 1b}}}] run scoreboard players op
 #reload
 execute as @a[scores={c_ammo_pistol=..0,t_ammo_pistol=1..},nbt={SelectedItem: {tag: {pistol: 1b}}}] run scoreboard players add @s reloaddelay 1
 execute as @a[scores={c_ammo_pistol=..0,t_ammo_pistol=1..,reloaddelay=10..}] run function ttt:weapons/types/pistol_reload
-execute as @a[scores={t_ammo_pistol=22..}] run scoreboard players set @s t_ammo_pistol 21
+execute as @a[scores={t_ammo_pistol=31..}] run scoreboard players set @s t_ammo_pistol 30

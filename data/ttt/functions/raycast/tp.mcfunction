@@ -2,7 +2,7 @@
 scoreboard players add @s value 1
 
 #* muzzle flash
-execute at @e[tag=ray,scores={value=0..199}] run particle flame ~ ~ ~ 0 0 0 0 1 force
+execute at @e[tag=ray,scores={value=0..2}] run particle flame ~ ~ ~ 0 0 0 0 1 force
 
 #cast the ray 200 blocks unless block in 1 gametick
 execute at @e[tag=ray,limit=1,sort=nearest] if block ~ ~ ~ air run tp @s ^ ^ ^-1
@@ -42,7 +42,7 @@ execute at @e[tag=ray,limit=1] positioned ~ ~-1 ~ if entity @e[tag=glass,distanc
 #* loop
 
 #* kill bullet if hit block
-execute as @e[tag=ray] at @s unless block ~ ~ ~ air run particle portal ^ ^ ^-.5 0 0 0 0 5 force
+execute as @e[tag=ray] at @s unless block ~ ~ ~ air run particle dust 0.361 0.231 0.165 1 ^ ^ ^.2 0 0 0 0 10 normal
 execute as @e[tag=ray] at @s unless block ~ ~ ~ air run kill @s
 #* kill bullet if over 192 blocks away from a player
 execute as @e[tag=ray] at @s unless entity @a[distance=..192] run kill @s

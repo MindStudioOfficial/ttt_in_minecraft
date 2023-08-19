@@ -26,6 +26,7 @@ Use this datapack together with the [resourcepack](https://github.com/MindStudio
 - Baseball Bat (knockback)
 - Quick Escape Pearl (Enderpearl)
 - C4
+- Invisibility Potion
 
 ### Admin Tools
 
