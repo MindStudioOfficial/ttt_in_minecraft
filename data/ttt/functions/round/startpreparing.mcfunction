@@ -12,6 +12,7 @@ kill @e[tag=feet]
 kill @e[tag=head]
 kill @e[type=item]
 kill @e[tag=c4]
+kill @e[tag=t_shop]
 xp set @a 0 levels
 xp set @a 0 points
 

@@ -49,6 +49,8 @@ Run `/function ttt:noadmin` to remove the items and remove the `admin` team
 
 ## TODO:
 
+- [ ] T Radar 
+- [ ] Detective can see dead bodies through particles
 - [ ] Poison Nade
 - [ ] Blindness Nade
 - [ ] Stun Nade
