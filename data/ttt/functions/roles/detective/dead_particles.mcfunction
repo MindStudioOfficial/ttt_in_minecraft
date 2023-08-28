@@ -1,0 +1,2 @@
+execute at @e[tag=corpse] if entity @e[scores={i=19..}] run particle dust 0.8 0.000 0.000 1 ~ ~ ~ 2 2 2 .01 20 force @a[team=detective]
+execute at @e[tag=corpse] if entity @e[scores={i=19..}] run particle dust 0.4 0.000 0.000 1 ~ ~ ~ 4 5 4 .01 20 force @a[team=detective]
