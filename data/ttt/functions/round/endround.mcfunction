@@ -1,9 +1,9 @@
-#afterroundtime: (def. 20)
+function ttt:round/rolereveal
+
+#* afterroundtime: (def. 20)
 scoreboard players set @e[tag=sign] roundtime 20
 
-scoreboard players set @e[tag=sign] rtseconds 0
-scoreboard players set @e[tag=sign] rtminutes 0
-scoreboard players set @e[tag=sign] i 0
+function ttt:round/reset_time_display
 
 team join roundover @a[team=!admin]
 

@@ -1,2 +1,4 @@
+#* tp random player to spawnpoint
 tp @r[team=roundover] ~ ~ ~
-team join preparing @a[team=roundover,distance=..1]
+#* join player to preparing team
+team join preparing @a[team=roundover,limit=1,sort=nearest]

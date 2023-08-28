@@ -1,0 +1,1 @@
+scoreboard players set @e[tag=sign] paused 1

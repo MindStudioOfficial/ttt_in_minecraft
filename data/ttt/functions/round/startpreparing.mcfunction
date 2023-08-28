@@ -1,18 +1,9 @@
 #*preparingtime: (def. 30) when changed, set regeneration time below to same value
 scoreboard players set @e[tag=sign] roundtime 30
 
-scoreboard players set @e[tag=sign] rtseconds 0
-scoreboard players set @e[tag=sign] rtminutes 0
-scoreboard players set @e[tag=sign] i 0
+function ttt:round/reset_time_display
 
-#team join preparing @a[team=!admin]
-gamemode adventure @a[team=!admin]
-kill @e[tag=corpse]
-kill @e[tag=feet]
-kill @e[tag=head]
-kill @e[type=item]
-kill @e[tag=c4]
-kill @e[tag=t_shop]
+function ttt:round/kill_round_entities
 xp set @a 0 levels
 xp set @a 0 points
 
@@ -24,11 +15,11 @@ function ttt:weapons/summon_pickup_items
 effect give @e[team=!admin] minecraft:regeneration 30 100 true
 
 function ttt:weapons/resetammo
-
-
-#reset shops
 function ttt:shops/resetshops
-
 function ttt:other/glass_reset
+
+#* respawn players at spawnpoint, if no player close,
+execute as @e[tag=spawnpoint,sort=random] at @s unless entity @a[distance=..1] if entity @a[team=roundover] run function ttt:player_respawn
+gamemode adventure @a[team=preparing]
 
 scoreboard players set @e[tag=sign] roundstage 1
