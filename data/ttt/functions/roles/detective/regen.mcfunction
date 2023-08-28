@@ -1,0 +1,1 @@
+effect give @a[team=detective] instant_health 2 6 true
