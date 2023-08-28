@@ -1,0 +1,24 @@
+{
+    "function": "copy_nbt",
+    "source": {
+        "type": "minecraft:storage",
+        "source": "minecraft:radar"
+    },
+    "ops": [
+        {
+            "op": "replace",
+            "source": "Pos.X",
+            "target": "LodestonePos.X"
+        },
+        {
+            "op": "replace",
+            "source": "Pos.Y",
+            "target": "LodestonePos.Y"
+        },
+        {
+            "op": "replace",
+            "source": "Pos.Z",
+            "target": "LodestonePos.Z"
+        }
+    ]
+}

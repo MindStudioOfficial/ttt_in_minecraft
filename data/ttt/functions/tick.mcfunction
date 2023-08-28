@@ -11,7 +11,7 @@ function ttt:playercount/playercount
 function ttt:round/check_win
 
 function ttt:weapons/tickweapons
-function ttt:roles/detective/dead_particles
+function ttt:roles/tickroles
 
 function ttt:update_inventory
 

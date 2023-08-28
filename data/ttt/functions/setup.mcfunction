@@ -62,6 +62,9 @@ scoreboard objectives add throw minecraft.used:minecraft.snowball
 scoreboard objectives add c4time dummy
 scoreboard objectives add c4seconds dummy
 
+#radar -----------------------------
+scoreboard objectives add radartime dummy
+
 #gamerules ------------------------
 gamerule keepInventory false
 gamerule doWeatherCycle false
