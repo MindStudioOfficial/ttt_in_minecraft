@@ -6,7 +6,7 @@ execute if entity @s[scores={c_ammo_pistol=1..}] at @e[tag=ray_pistol,limit=1,so
 #* cast ray recursively
 execute if entity @s[scores={c_ammo_pistol=1..}] as @e[tag=ray_pistol,limit=1,sort=nearest] at @s if block ~ ~ ~ air run function ttt:raycast/tp
 #* fire sound
-execute if entity @s[scores={c_ammo_pistol=1..}] run playsound custom.fiveseven-1 player @a ~ ~ ~ 1 1
+execute if entity @s[scores={c_ammo_pistol=1..}] run playsound custom.fiveseven-1 player @a ~ ~ ~ .8 1 .01
 #* remove 1 bullet from magazine
 execute if entity @s[scores={c_ammo_pistol=1..}] run scoreboard players remove @s c_ammo_pistol 1
 #* if mag empty
