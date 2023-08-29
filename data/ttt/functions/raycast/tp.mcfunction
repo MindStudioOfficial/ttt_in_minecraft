@@ -2,7 +2,8 @@
 scoreboard players add @s value 1
 
 #* muzzle flash
-execute at @s[scores={value=0..500}] run particle flame ~ ~ ~ 0 0 0 0 1 force
+execute at @s[scores={value=0..3}] run particle flame ~ ~ ~ 0 0 0 0 1 force
+execute at @s[scores={value=0..1}] run particle dust 0.5 0.5 0.5 1 ~ ~ ~ .04 .04 .04 0.01 10 force
 
 #cast the ray 200 blocks unless block in 1 gametick
 execute at @s[predicate=ttt:in_ray_passable_block] run tp @s ^ ^ ^-.5
@@ -42,8 +43,8 @@ execute at @s positioned ~ ~-1 ~ if entity @e[tag=glass,distance=..1] run execut
 #* loop
 
 #* kill bullet if hit block
-execute at @s unless entity @s[predicate=ttt:in_ray_passable_block] run particle dust 0.475 0.475 0.475 1 ^ ^ ^.2 .04 .04 .04 0 20 force
-execute at @s unless entity @s[predicate=ttt:in_ray_passable_block] run kill @s
+execute at @s unless predicate ttt:in_ray_passable_block run particle dust 0.475 0.475 0.475 1 ^ ^ ^.2 .04 .04 .04 0 20 force
+execute at @s unless predicate ttt:in_ray_passable_block run kill @s
 #* kill bullet if over 300 blocks away from a player
 execute at @s unless entity @a[distance=..500] run kill @s
 

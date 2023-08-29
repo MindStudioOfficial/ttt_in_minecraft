@@ -117,7 +117,8 @@
                         "minecraft:redstone_torch",
                         "minecraft:redstone_wall_torch",
                         "minecraft:lantern",
-                        "minecraft:soul_lantern"
+                        "minecraft:soul_lantern",
+                        "minecraft:iron_bars"
                     ]
                 }
             }
