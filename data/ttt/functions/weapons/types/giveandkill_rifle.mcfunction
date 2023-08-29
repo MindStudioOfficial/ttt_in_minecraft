@@ -1,3 +1,3 @@
-give @p carrot_on_a_stick{display: {Name: '{"text":"Rifle"}'}, CustomModelData: 1, rifle: 1b, AttributeModifiers: [{AttributeName: "minecraft:generic.movement_speed", Name: "generic.movementSpeed", Amount: -.08d, Operation: 0, UUID: [I; 0, 456509, 0, 57303], Slot: "mainhand"}]} 1
+give @p carrot_on_a_stick{display: {Name: '{"text":"Rifle","color":"dark_green","bold":true}'}, CustomModelData: 1, rifle: 1b, AttributeModifiers: [{AttributeName: "generic.movement_speed", Name: "generic.movement_speed", Amount: -.08d, Operation: 0, UUID: [I; 118912105, 1008420593, -1284474050, 781811250], Slot: "mainhand"}]} 1
 function ttt:sounds/itempickup
 kill @s
