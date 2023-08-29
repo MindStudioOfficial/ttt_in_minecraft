@@ -37,6 +37,7 @@ Use this datapack together with the [resourcepack](https://github.com/MindStudio
 - C4
 - Invisibility Potion
 - Radar (tracks closest innocent/detective)
+- Swapper (swap position with random player after 5s)
 
 ### Detective Features
 

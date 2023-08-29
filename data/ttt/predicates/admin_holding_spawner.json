@@ -1,0 +1,31 @@
+{
+    "condition": "all_of",
+    "terms": [
+        {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "team": "admin"
+            }
+        },
+        {
+            "condition": "any_of",
+            "terms": [
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{SelectedItem:{tag:{removespawner:1b}}}"
+                    }
+                },
+                {
+                    "condition": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{SelectedItem:{tag:{spawner:1b}}}"
+                    }
+                }
+            ]
+        }
+    ]
+}
