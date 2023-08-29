@@ -8,18 +8,14 @@ xp set @a 0 levels
 xp set @a 0 points
 
 title @a title ""
-clear @a[team=!admin]
+clear @a[predicate=ttt:any_player]
 function ttt:weapons/remove_pickup_items
 function ttt:weapons/summon_pickup_items
 
-effect give @e[team=!admin] minecraft:regeneration 30 100 true
+effect give @e[predicate=ttt:any_player] minecraft:regeneration 30 100 true
 
 function ttt:weapons/resetammo
 function ttt:shops/resetshops
 function ttt:other/glass_reset
-
-#* respawn players at spawnpoint, if no player close,
-execute as @e[tag=spawnpoint,sort=random] at @s unless entity @a[distance=..1] if entity @a[team=roundover] run function ttt:round/player_respawn
-gamemode adventure @a[team=preparing]
 
 scoreboard players set @e[tag=sign] roundstage 1

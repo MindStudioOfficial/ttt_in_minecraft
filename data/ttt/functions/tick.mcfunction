@@ -2,7 +2,7 @@
 
 function ttt:death/checkdeath
 function ttt:death/confirm
-function ttt:round/roundtimer
+function ttt:round/_round_timer
 function ttt:update_title
 function ttt:playercount/innocentcount
 function ttt:playercount/traitorcount
