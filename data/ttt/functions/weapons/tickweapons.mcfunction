@@ -1,5 +1,5 @@
 function ttt:weapons/pickup
-function ttt:raycast/clickdetect/tickdetect
+function ttt:clickdetect/tickdetect
 function ttt:weapons/convertitems
 
 function ttt:weapons/ammo

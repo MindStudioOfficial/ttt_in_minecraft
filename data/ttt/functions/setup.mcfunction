@@ -65,6 +65,9 @@ scoreboard objectives add c4seconds dummy
 #radar -----------------------------
 scoreboard objectives add radartime dummy
 
+#swapper ---------------------------
+scoreboard objectives add swappertime dummy
+
 #gamerules ------------------------
 gamerule keepInventory false
 gamerule doWeatherCycle false

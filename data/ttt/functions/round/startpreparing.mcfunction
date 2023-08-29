@@ -19,7 +19,7 @@ function ttt:shops/resetshops
 function ttt:other/glass_reset
 
 #* respawn players at spawnpoint, if no player close,
-execute as @e[tag=spawnpoint,sort=random] at @s unless entity @a[distance=..1] if entity @a[team=roundover] run function ttt:player_respawn
+execute as @e[tag=spawnpoint,sort=random] at @s unless entity @a[distance=..1] if entity @a[team=roundover] run function ttt:round/player_respawn
 gamemode adventure @a[team=preparing]
 
 scoreboard players set @e[tag=sign] roundstage 1
