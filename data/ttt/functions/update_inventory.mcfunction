@@ -9,6 +9,4 @@ execute as @a[team=detective] unless entity @s[nbt={Inventory: [{tag: {d_vest: 1
 
 #* give everyone a sword
 
-execute as @a[team=innocent] unless entity @s[nbt={Inventory: [{tag: {sword: 1b}}]}] run item replace entity @s hotbar.0 with wooden_sword{display: {Name: '{"text":"Sword","color":"gold","bold":true}', Lore: ['{"text":"... for close combat."}']}, HideFlags: 255, Unbreakable: 1b, sword: 1b} 1
-execute as @a[team=detective] unless entity @s[nbt={Inventory: [{tag: {sword: 1b}}]}] run item replace entity @s hotbar.0 with wooden_sword{display: {Name: '{"text":"Sword","color":"gold","bold":true}', Lore: ['{"text":"... for close combat."}']}, HideFlags: 255, Unbreakable: 1b, sword: 1b} 1
-execute as @a[team=traitor] unless entity @s[nbt={Inventory: [{tag: {sword: 1b}}]}] run item replace entity @s hotbar.0 with wooden_sword{display: {Name: '{"text":"Sword","color":"gold","bold":true}', Lore: ['{"text":"... for close combat."}']}, HideFlags: 255, Unbreakable: 1b, sword: 1b} 1
+execute as @a[predicate=ttt:alive_player] unless entity @s[nbt={Inventory: [{tag: {sword: 1b}}]}] run item replace entity @s hotbar.0 with wooden_sword{display: {Name: '{"text":"Sword","color":"gold","bold":true}', Lore: ['{"text":"... for close combat."}']}, HideFlags: 255, Unbreakable: 1b, sword: 1b} 1
