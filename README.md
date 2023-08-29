@@ -45,6 +45,8 @@ Use this datapack together with the [resourcepack](https://github.com/MindStudio
 
 ### Admin Tools
 
+Run `/function ttt:setup` to initialize all necessary scoreboard objectives, gamerules and teams.
+
 Run `/function ttt:admin` to get the spawner items.
 
 - Place weapon spawner
@@ -59,7 +61,6 @@ Run `/function ttt:noadmin` to remove the items and remove the `admin` team.
 Run `/function ttt:pause` to pause the round timer. (items and weapons will still work)
 Run `/function ttt:resume` to resume the round timer.
 
-Run `/function ttt:setup` to initialize all necessary scoreboard objectives, gamerules and teams.
-
+Run `/function ttt:restart` to restart and resume the round.
 
 
