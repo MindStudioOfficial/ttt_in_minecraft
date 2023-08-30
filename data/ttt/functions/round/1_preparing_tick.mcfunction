@@ -1,4 +1,7 @@
 #* rejoin new players
+team join roundover @a[team=detective]
+team join roundover @a[team=innocent]
+team join roundover @a[team=traitor]
 team join roundover @a[team=]
 #* rejoin dead players
 team join roundover @a[gamemode=spectator]
