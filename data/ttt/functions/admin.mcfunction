@@ -14,6 +14,8 @@ give @s[team=admin] silverfish_spawn_egg{display: {Name: '{"text":"Add Weapon Sp
 
 give @s[team=admin] evoker_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (Pistol)"}'}, spawner: 1b, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["weapon_pistol", "spawner"], CustomName: '{"text":"Pistol Spawner","color":"gold"}'}} 1
 
+give @s[team=admin] ravager_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (MP5)"}'}, spawner: 1b, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["weapon_mp5", "spawner"], CustomName: '{"text":"MP5 Spawner","color":"gold"}'}} 1
+
 give @s[team=admin] enderman_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (Smoke Grenade)"}'}, spawner: 1b, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["weapon_grenade_smoke", "spawner"], CustomName: '{"text":"Smoke Spawner","color":"gold"}'}} 1
 
 give @s[team=admin] blaze_spawn_egg{display: {Name: '{"text":"Add Weapon Spawn (Fire Grenade)"}'}, spawner: 1b, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["weapon_grenade_fire", "spawner"], CustomName: '{"text":"Fire Spawner","color":"gold"}'}} 1

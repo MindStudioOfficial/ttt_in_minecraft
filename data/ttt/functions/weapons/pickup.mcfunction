@@ -9,6 +9,12 @@ execute as @e[tag=pistol] at @s as @p[distance=..1,predicate=ttt:alive_player,pr
 #* pickup pistol ammo
 execute as @e[tag=ammo_pistol] at @s as @p[distance=..1,predicate=ttt:alive_player] if score @s ammo_mag_pistol <= .pistol ammo_max_pickup run function ttt:weapons/types/giveandkill_ammo_pistol
 
+
+#* pickup mp5
+execute as @e[tag=mp5] at @s as @p[distance=..1,predicate=ttt:alive_player,predicate=!ttt:alive_has_mp5] run function ttt:weapons/types/giveandkill_mp5
+#* pickup mp5 ammo
+execute as @e[tag=ammo_mp5] at @s as @p[distance=..1,predicate=ttt:alive_player] if score @s ammo_mag_mp5 <= .mp5 ammo_max_pickup run function ttt:weapons/types/giveandkill_ammo_mp5
+
 #* grenades
 #* smoke nadede
 execute as @e[tag=grenade_smoke] at @s if entity @a[gamemode=adventure,distance=..1] unless entity @a[distance=..1,nbt={Inventory: [{tag: {grenade_smoke: 1b}}]}] run function ttt:weapons/types/grenades/giveandkill_smoke

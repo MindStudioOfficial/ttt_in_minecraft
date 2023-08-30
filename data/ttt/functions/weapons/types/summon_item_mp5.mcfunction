@@ -1,0 +1,1 @@
+summon item_display ~ ~ ~ {glow_color_override: 0b, item_display: "fixed", Rotation: [0f, 90f], Tags: ["mp5"], CustomName: '{"text":"MP5 Display","color":"gold"}', item: {id: "minecraft:ender_eye", Count: 1b, tag: {CustomModelData: 3, mp5: 1b}}}

@@ -77,10 +77,12 @@ scoreboard objectives add playercount dummy
 scoreboard objectives add firecooldown dummy
 scoreboard players set .rifle firecooldown 30
 scoreboard players set .pistol firecooldown 10
+scoreboard players set .mp5 firecooldown 2
 
 scoreboard objectives add reloaddelay dummy
 scoreboard players set .rifle reloaddelay 10
 scoreboard players set .pistol reloaddelay 10
+scoreboard players set .mp5 reloaddelay 10
 
 scoreboard objectives add rangeleft dummy
 scoreboard players set stats rangeleft 500
@@ -97,16 +99,21 @@ scoreboard objectives add ammo_mag dummy
 scoreboard objectives add ammo_per_mag dummy
 scoreboard players set .rifle ammo_per_mag 7
 scoreboard players set .pistol ammo_per_mag 15
+scoreboard players set .mp5 ammo_per_mag 25
 
 scoreboard objectives add ammo_max_pickup dummy
 scoreboard players set .rifle ammo_max_pickup 7
 scoreboard players set .pistol ammo_max_pickup 15
+scoreboard players set .mp5 ammo_max_pickup 25
 
 scoreboard objectives add ammo_loaded_rifle dummy
 scoreboard objectives add ammo_mag_rifle dummy
 
 scoreboard objectives add ammo_loaded_pistol dummy
 scoreboard objectives add ammo_mag_pistol dummy
+
+scoreboard objectives add ammo_loaded_mp5 dummy
+scoreboard objectives add ammo_mag_mp5 dummy
 
 #shops ----------------------------
 scoreboard objectives add shopping dummy
