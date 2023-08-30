@@ -1,3 +1,3 @@
-scoreboard players add @p t_ammo_pistol 15
+scoreboard players operation @s ammo_mag_pistol += .pistol ammo_per_mag
 function ttt:sounds/itempickup
-kill @s
+kill @e[tag=ammo_pistol,sort=nearest,limit=1]

@@ -1,2 +1,2 @@
-execute if entity @e[tag=sign,scores={roundstage=3,roundtime=..415,traitorcount=0}] run function ttt:round/show_win
-execute if entity @e[tag=sign,scores={roundstage=3,roundtime=..415,innocentcount=0}] run function ttt:round/show_win
+execute if score stats roundstage matches 3 if score stats roundtime matches ..415 if score stats traitorcount matches ..0 run scoreboard players set stats roundstage 4
+execute if score stats roundstage matches 3 if score stats roundtime matches ..415 if score stats innocentcount matches ..0 run scoreboard players set stats roundstage 4

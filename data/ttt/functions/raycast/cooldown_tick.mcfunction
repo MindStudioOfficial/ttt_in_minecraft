@@ -1,0 +1,1 @@
+execute as @a[predicate=ttt:alive_player] if score @s firecooldown matches 1.. run scoreboard players remove @s firecooldown 1

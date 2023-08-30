@@ -1,4 +1,4 @@
-#teams -------------------------
+#* teams -------------------------
 team add traitor "Traitor"
 team add innocent "Innocent"
 team add detective "Detective"
@@ -25,6 +25,23 @@ team modify conf_detective prefix [{"text":"Confirmed Dead ","color":"gray"},{"t
 
 team modify preparing friendlyFire false
 
+#* gamerules ------------------------
+gamerule keepInventory false
+gamerule doWeatherCycle false
+gamerule doDaylightCycle false
+gamerule showDeathMessages false
+gamerule naturalRegeneration false
+gamerule sendCommandFeedback false
+gamerule spawnRadius 0
+gamerule commandBlockOutput false
+gamerule announceAdvancements false
+
+#* other ----------------------------
+#create the sign block that holds the names of the killed players
+execute at @e[tag=sign] run setblock ~ ~ ~ oak_sign
+
+#* scoreboard -----------------------
+
 #death and corpse
 scoreboard objectives add tod deathCount
 scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time
@@ -33,23 +50,59 @@ scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add roundtime dummy
 scoreboard objectives add rtseconds dummy
 scoreboard objectives add rtminutes dummy
+
 scoreboard objectives add roundstage dummy
+scoreboard players set stats roundstage 0
+
 scoreboard objectives add rtzero dummy
 
 scoreboard objectives add i dummy
+scoreboard players set stats i 0
+
 scoreboard objectives add 60 dummy
+scoreboard players set stats 60 60
+
 scoreboard objectives add 20 dummy
+scoreboard players set stats 20 20
 
 scoreboard objectives add paused dummy
+scoreboard players set stats paused 0
 
 #playercount-----------------------
 scoreboard objectives add traitorcount dummy
 scoreboard objectives add innocentcount dummy
 scoreboard objectives add playercount dummy
 
-#other ----------------------------
-scoreboard objectives add click minecraft.used:minecraft.carrot_on_a_stick
-scoreboard objectives add value dummy
+#weapons --------------------------
+scoreboard objectives add firecooldown dummy
+scoreboard players set .rifle firecooldown 30
+scoreboard players set .pistol firecooldown 10
+
+scoreboard objectives add reloaddelay dummy
+scoreboard players set .rifle reloaddelay 10
+scoreboard players set .pistol reloaddelay 10
+
+scoreboard objectives add rangeleft dummy
+scoreboard players set stats rangeleft 500
+
+#ammo -----------------------------
+
+scoreboard objectives add ammo_loaded dummy
+scoreboard objectives add ammo_mag dummy
+
+scoreboard objectives add ammo_per_mag dummy
+scoreboard players set .rifle ammo_per_mag 7
+scoreboard players set .pistol ammo_per_mag 15
+
+scoreboard objectives add ammo_max_pickup dummy
+scoreboard players set .rifle ammo_max_pickup 7
+scoreboard players set .pistol ammo_max_pickup 15
+
+scoreboard objectives add ammo_loaded_rifle dummy
+scoreboard objectives add ammo_mag_rifle dummy
+
+scoreboard objectives add ammo_loaded_pistol dummy
+scoreboard objectives add ammo_mag_pistol dummy
 
 #shops ----------------------------
 scoreboard objectives add shopping dummy
@@ -68,35 +121,3 @@ scoreboard objectives add radartime dummy
 #swapper ---------------------------
 scoreboard objectives add swappertime dummy
 
-#gamerules ------------------------
-gamerule keepInventory false
-gamerule doWeatherCycle false
-gamerule doDaylightCycle false
-gamerule showDeathMessages false
-gamerule naturalRegeneration false
-gamerule sendCommandFeedback false
-gamerule spawnRadius 0
-gamerule commandBlockOutput false
-gamerule announceAdvancements false
-
-#set default scores. Placeholder sign required.
-execute at @e[tag=sign] run setblock ~ ~ ~ oak_sign
-execute as @e[tag=sign] run scoreboard players set @s roundstage 0
-execute as @e[tag=sign] run scoreboard players set @s paused 0
-execute as @e[tag=sign] run scoreboard players set @s i 0
-execute as @e[tag=sign] run scoreboard players set @s 60 60
-execute as @e[tag=sign] run scoreboard players set @s 20 20
-
-#Ammo
-
-scoreboard objectives add currentammo dummy
-scoreboard objectives add totalammo dummy
-scoreboard objectives add reloaddelay dummy
-
-#* c_ = current ammo (in weapon)
-#* t_ = total ammo  (in mag)
-scoreboard objectives add c_ammo_rifle dummy
-scoreboard objectives add t_ammo_rifle dummy
-
-scoreboard objectives add c_ammo_pistol dummy
-scoreboard objectives add t_ammo_pistol dummy

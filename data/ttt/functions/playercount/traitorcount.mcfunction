@@ -1,2 +1,2 @@
-scoreboard players set @e[tag=sign] traitorcount 0
-execute as @a[team=traitor,gamemode=adventure] run scoreboard players add @e[tag=sign] traitorcount 1
+scoreboard players set stats traitorcount 0
+execute as @a[team=traitor,gamemode=adventure] run scoreboard players add stats traitorcount 1

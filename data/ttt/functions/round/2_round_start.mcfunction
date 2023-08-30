@@ -1,5 +1,5 @@
 #roundtime: (def. 420)
-scoreboard players set @e[tag=sign] roundtime 420
+scoreboard players set stats roundtime 420
 
 function ttt:round/reset_time_display
 
@@ -10,4 +10,4 @@ function ttt:round/kill_dead_bodies
 function ttt:roles/traitor/give_items
 function ttt:roles/detective/regen
 
-scoreboard players set @e[tag=sign] roundstage 3
+scoreboard players set stats roundstage 3

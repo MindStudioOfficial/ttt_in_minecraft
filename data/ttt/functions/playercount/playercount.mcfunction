@@ -1,2 +1,2 @@
-scoreboard players set @e[tag=sign] playercount 0
-execute as @a[team=!admin] run scoreboard players add @e[tag=sign] playercount 1
+scoreboard players set stats playercount 0
+execute as @a[predicate=ttt:any_player] run scoreboard players add stats playercount 1

@@ -1,5 +1,5 @@
 #*preparingtime: (def. 30) when changed, set regeneration time below to same value
-scoreboard players set @e[tag=sign] roundtime 30
+scoreboard players set stats roundtime 30
 
 function ttt:round/reset_time_display
 
@@ -18,4 +18,4 @@ function ttt:weapons/resetammo
 function ttt:shops/resetshops
 function ttt:other/glass_reset
 
-scoreboard players set @e[tag=sign] roundstage 1
+scoreboard players set stats roundstage 1

@@ -1,8 +1,8 @@
 function ttt:weapons/pickup
-function ttt:clickdetect/tickdetect
 function ttt:weapons/convertitems
 
-function ttt:weapons/ammo
+function ttt:raycast/cooldown_tick
+function ttt:weapons/ammo_tick
 
 function ttt:weapons/types/grenades/grenade_mechanics
 function ttt:weapons/types/c4

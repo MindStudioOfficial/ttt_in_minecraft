@@ -1,1 +1,1 @@
-scoreboard players set @e[tag=sign] paused 1
+scoreboard players set stats paused 1

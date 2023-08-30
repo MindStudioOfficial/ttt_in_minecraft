@@ -1,13 +1,14 @@
-#executed as the firing player with click=1.. and nbt pistol=1b
-#* summon ray marker
-execute if entity @s[scores={c_ammo_pistol=1..}] run summon marker ^ ^ ^2.1 {Tags: ["ray_pistol", "ray"]}
-execute if entity @s[scores={c_ammo_pistol=1..}] at @e[tag=ray_pistol,limit=1,sort=nearest] run tp @e[tag=ray_pistol,limit=1,sort=nearest] ~ ~ ~ facing entity @s
-execute if entity @s[scores={c_ammo_pistol=1..}] at @e[tag=ray_pistol,limit=1,sort=nearest] run tp @e[tag=ray_pistol,limit=1,sort=nearest] ~ ~1.5 ~
+#!executed as the firing player with tag shooting_pistol
+tag @s add shooting_pistol
 #* cast ray recursively
-execute if entity @s[scores={c_ammo_pistol=1..}] as @e[tag=ray_pistol,limit=1,sort=nearest] at @s if predicate ttt:in_ray_passable_block run function ttt:raycast/tp
+scoreboard players operation @s rangeleft = stats rangeleft
+execute as @s at @s anchored eyes positioned ^ ^ ^ run function ttt:raycast/tp
+scoreboard players reset @s rangeleft
 #* fire sound
-execute if entity @s[scores={c_ammo_pistol=1..}] run playsound custom.fiveseven-1 player @a ~ ~ ~ .8 1 .01
-#* remove 1 bullet from magazine
-execute if entity @s[scores={c_ammo_pistol=1..}] run scoreboard players remove @s c_ammo_pistol 1
-#* if mag empty
-execute if entity @s[scores={c_ammo_pistol=..0}] run playsound custom.clipempty_pistol player @a ~ ~ ~ 1 1
+playsound custom.fiveseven-1 player @a ~ ~ ~ .8 1 .01
+
+#* remove 1 bullet from loaded
+scoreboard players remove @s ammo_loaded_pistol 1
+#* set fire cooldown
+scoreboard players operation @s firecooldown = .pistol firecooldown
+tag @s remove shooting_pistol
