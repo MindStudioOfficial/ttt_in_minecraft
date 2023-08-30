@@ -18,27 +18,13 @@ execute at @e[tag=primed_fire,scores={grenadetime=40}] run playsound minecraft:b
 execute at @e[tag=primed_fire,scores={grenadetime=40..}] run particle minecraft:flame ~-.5 ~1.6 ~.5 1.5 .2 1.5 0 100 force
 
     #* damage players in range every second
-execute at @e[tag=primed_fire,scores={grenadetime=60}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=80}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=100}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=120}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=140}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=160}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=180}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=200}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=220}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=240}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=260}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=280}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=300}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=320}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=340}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=360}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=380}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=400}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=420}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=440}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=460}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
-execute at @e[tag=primed_fire,scores={grenadetime=480}] positioned ~ ~1.4 ~ run execute as @a[distance=..3] run damage @s 3 minecraft:in_fire
+execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. run scoreboard players operation @s i = @s grenadetime
+execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. run scoreboard players operation @s i %= stats 20
+execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. if score @s i matches 0 positioned ~ ~1 ~ as @a[distance=..3] run damage @s 3 minecraft:in_fire at ~ ~ ~
+execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. if score @s i matches 0 positioned ~ ~1 ~ as @a[distance=..3] run scoreboard players set @s damage 3
+
+execute as @a[scores={damage=1..}] at @s positioned ^ ^1 ^.5 run function ttt:weapons/damage_indicator_summon
+execute as @a[scores={damage=1..}] run scoreboard players reset @s damage
+
 
 execute as @e[tag=primed_fire,scores={grenadetime=500..}] run kill @s

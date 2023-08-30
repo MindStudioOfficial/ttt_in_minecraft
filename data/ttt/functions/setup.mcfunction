@@ -85,6 +85,10 @@ scoreboard players set .pistol reloaddelay 10
 scoreboard objectives add rangeleft dummy
 scoreboard players set stats rangeleft 500
 
+scoreboard objectives add damage dummy
+scoreboard objectives add damage_indicator_life dummy
+scoreboard objectives add damage_indicator_alpha dummy
+
 #ammo -----------------------------
 
 scoreboard objectives add ammo_loaded dummy

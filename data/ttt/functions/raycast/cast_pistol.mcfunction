@@ -1,4 +1,5 @@
 #!executed as the firing player with tag shooting_pistol
+tag @s add shooting
 tag @s add shooting_pistol
 #* cast ray recursively
 scoreboard players operation @s rangeleft = stats rangeleft
@@ -11,4 +12,6 @@ playsound custom.fiveseven-1 player @a ~ ~ ~ .8 1 .01
 scoreboard players remove @s ammo_loaded_pistol 1
 #* set fire cooldown
 scoreboard players operation @s firecooldown = .pistol firecooldown
+tag @s remove shooting
 tag @s remove shooting_pistol
+tag @a remove hit
