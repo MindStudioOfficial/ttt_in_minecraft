@@ -1,0 +1,1 @@
+scoreboard objectives setdisplay sidebar points_display

@@ -18,4 +18,6 @@ function ttt:weapons/resetammo
 function ttt:shops/resetshops
 function ttt:other/glass_reset
 
+function ttt:round/points_show
+
 scoreboard players set stats roundstage 1

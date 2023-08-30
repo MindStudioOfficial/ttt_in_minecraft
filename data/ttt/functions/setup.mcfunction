@@ -132,3 +132,9 @@ scoreboard objectives add radartime dummy
 #swapper ---------------------------
 scoreboard objectives add swappertime dummy
 
+#points ----------------------------
+
+scoreboard objectives add points dummy "Points"
+scoreboard objectives add points_display dummy "Points"
+
+scoreboard objectives setdisplay list points_display

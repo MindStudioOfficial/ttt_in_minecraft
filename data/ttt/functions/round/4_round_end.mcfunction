@@ -1,5 +1,7 @@
 function ttt:round/show_win
 function ttt:round/rolereveal
+function ttt:round/award_points
+function ttt:round/points_show
 
 #* afterroundtime: (def. 20)
 scoreboard players set stats roundtime 20

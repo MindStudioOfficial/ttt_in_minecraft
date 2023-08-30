@@ -2,23 +2,8 @@
     "condition": "all_of",
     "terms": [
         {
-            "condition": "any_of",
-            "terms": [
-                {
-                    "condition": "entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                        "team": "innocent"
-                    }
-                },
-                {
-                    "condition": "entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                        "team": "detective"
-                    }
-                }
-            ]
+            "condition": "reference",
+            "name": "ttt:in_any_innocent_team"
         },
         {
             "condition": "entity_properties",
