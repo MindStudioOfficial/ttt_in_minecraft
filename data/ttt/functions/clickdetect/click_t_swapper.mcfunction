@@ -1,2 +1,2 @@
 advancement revoke @a only ttt:click_t_swapper
-function ttt:roles/traitor/swapper_start
+execute unless score @s swappertime matches 1.. run function ttt:roles/traitor/swapper_start
