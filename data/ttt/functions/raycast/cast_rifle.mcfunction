@@ -3,7 +3,7 @@ tag @s add shooting
 tag @s add shooting_rifle
 #* cast ray recursively
 scoreboard players operation @s rangeleft = stats rangeleft
-execute as @s at @s anchored eyes positioned ^ ^ ^ run function ttt:raycast/tp
+execute as @s at @s anchored eyes positioned ^ ^ ^ run function ttt:raycast/cast
 scoreboard players reset @s rangeleft
 #* fire sound
 playsound custom.scout_fire-1 player @a ~ ~ ~ .8 1 .01

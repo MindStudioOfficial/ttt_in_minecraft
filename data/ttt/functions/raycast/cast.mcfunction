@@ -20,8 +20,6 @@ function ttt:raycast/hit_deal_damage
 execute positioned ~ ~ ~ if entity @e[tag=glass,distance=..1] run execute at @e[tag=glass,limit=1,sort=nearest] run fill ~ ~ ~ ~ ~1 ~ air destroy
 execute positioned ~ ~-1 ~ if entity @e[tag=glass,distance=..1] run execute at @e[tag=glass,limit=1,sort=nearest] run fill ~ ~ ~ ~ ~1 ~ air destroy
 
-#* loop
-
 #* kill bullet if hit block
 execute unless predicate ttt:in_ray_passable_block run particle dust 0.475 0.475 0.475 1 ^ ^ ^.2 .04 .04 .04 0 20 force
 execute unless predicate ttt:in_ray_passable_block run scoreboard players set @s rangeleft 0
@@ -29,6 +27,6 @@ execute unless predicate ttt:in_ray_passable_block run scoreboard players set @s
 execute unless entity @a[distance=..500] run scoreboard players set @s rangeleft 0
 
 #! move execution positon forward as long as the block is passable and we have distance left
-execute if predicate ttt:in_ray_passable_block if score @s rangeleft matches 1.. positioned ^ ^ ^.5 run function ttt:raycast/tp
+execute if predicate ttt:in_ray_passable_block if score @s rangeleft matches 1.. positioned ^ ^ ^.5 run function ttt:raycast/cast
 
 
