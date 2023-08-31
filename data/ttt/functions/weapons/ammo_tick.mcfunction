@@ -18,7 +18,7 @@ execute as @a[predicate=ttt:alive_holding_rifle] run scoreboard players operatio
 #* if loaded ammo empty tick up reload delay
 execute as @a[predicate=ttt:alive_holding_pistol] if score @s ammo_loaded_pistol matches ..0 if score @s ammo_mag_pistol >= .pistol ammo_per_mag run scoreboard players add @s reloaddelay 1
 #* if reload delay reached move ammo from mag to loaded
-execute as @a[predicate=ttt:alive_holding_pistol] at @s if score @s reloaddelay matches 1 run playsound custom.fiveseven_clipout player @a ~ ~ ~ 1 1
+execute as @a[predicate=ttt:alive_holding_pistol] at @s if score @s reloaddelay matches 2 run playsound custom.fiveseven_clipout player @a ~ ~ ~ 1 1
 execute as @a[predicate=ttt:alive_holding_pistol] at @s if score @s reloaddelay matches 10 run playsound custom.fiveseven_clipin player @a ~ ~ ~ 1 1
 execute as @a[predicate=ttt:alive_holding_pistol] if score @s reloaddelay >= .pistol reloaddelay run function ttt:weapons/types/reload_pistol
 
@@ -31,7 +31,7 @@ execute as @a[predicate=ttt:alive_holding_pistol] run scoreboard players operati
 #* if loaded ammo empty tick up reload delay
 execute as @a[predicate=ttt:alive_holding_mp5] if score @s ammo_loaded_mp5 matches ..0 if score @s ammo_mag_mp5 >= .mp5 ammo_per_mag run scoreboard players add @s reloaddelay 1
 #* if reload delay reached move ammo from mag to loaded
-execute as @a[predicate=ttt:alive_holding_mp5] at @s if score @s reloaddelay matches 1 run playsound custom.mac10_clipout player @a ~ ~ ~ 1 1
+execute as @a[predicate=ttt:alive_holding_mp5] at @s if score @s reloaddelay matches 2 run playsound custom.mac10_clipout player @a ~ ~ ~ 1 1
 execute as @a[predicate=ttt:alive_holding_mp5] at @s if score @s reloaddelay matches 10 run playsound custom.mac10_clipin player @a ~ ~ ~ 1 1
 execute as @a[predicate=ttt:alive_holding_mp5] if score @s reloaddelay >= .mp5 reloaddelay run function ttt:weapons/types/reload_mp5
 
