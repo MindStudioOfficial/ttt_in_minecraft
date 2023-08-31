@@ -3,6 +3,13 @@ execute if entity @s[team=innocent] run team join conf_innocent @s
 execute if entity @s[team=traitor] run team join conf_traitor @s
 execute if entity @s[team=detective] run team join conf_detective @s
 
+#* copy name to sign
+execute at @e[tag=sign] if entity @a[scores={tod=1}] run data modify block ~ ~ ~ front_text.messages insert 0 value '{"selector":"@a[scores={tod=1}]"}'
+
+execute at @e[tag=sign] if entity @a[scores={tod=1},team=innocent] run data modify block ~ ~ ~ front_text.messages insert 1 value '{"text":"conf_innocent"}'
+execute at @e[tag=sign] if entity @a[scores={tod=1},team=traitor] run data modify block ~ ~ ~ front_text.messages insert 1 value '{"text":"conf_traitor"}'
+execute at @e[tag=sign] if entity @a[scores={tod=1},team=detective] run data modify block ~ ~ ~ front_text.messages insert 1 value '{"text":"conf_detective"}'
+
 #* summon corpse
 summon armor_stand ~ ~-1.25 ~ {DisabledSlots: 4144959, CustomNameVisible: 0b, Tags: ["head", "unnamed", "corpse"], HandItems: [{id: "minecraft:red_tulip", Count: 1b}, {}], ArmorItems: [{}, {}, {id: "minecraft:leather_chestplate", Count: 1b}, {id: "minecraft:skeleton_skull", Count: 1b}], Invisible: 0b, NoGravity: 1b, NoBasePlate: 1b, ShowArms: 1b, Pose: {Body: [278f, 0f, 0f], Head: [317f, 0f, 0f], LeftArm: [270f, 0f, 0f], RightArm: [270f, 0f, 0f], LeftLeg: [270f, 0f, 0f], RightLeg: [270f, 0f, 0f]}}
 
