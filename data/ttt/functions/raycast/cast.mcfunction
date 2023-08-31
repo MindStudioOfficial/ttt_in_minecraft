@@ -21,7 +21,7 @@ execute positioned ~ ~ ~ if entity @e[tag=glass,distance=..1] run execute at @e[
 execute positioned ~ ~-1 ~ if entity @e[tag=glass,distance=..1] run execute at @e[tag=glass,limit=1,sort=nearest] run fill ~ ~ ~ ~ ~1 ~ air destroy
 
 #* kill bullet if hit block
-execute unless predicate ttt:in_ray_passable_block run particle dust 0.475 0.475 0.475 1 ^ ^ ^.2 .04 .04 .04 0 20 force
+execute unless predicate ttt:in_ray_passable_block run particle dust 0.475 0.475 0.475 1 ^ ^ ^-.2 .04 .04 .04 0 20 force
 execute unless predicate ttt:in_ray_passable_block run scoreboard players set @s rangeleft 0
 #* kill bullet if over 300 blocks away from a player
 execute unless entity @a[distance=..500] run scoreboard players set @s rangeleft 0
