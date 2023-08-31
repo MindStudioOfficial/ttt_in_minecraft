@@ -59,11 +59,10 @@ scoreboard objectives add rtzero dummy
 scoreboard objectives add i dummy
 scoreboard players set stats i 0
 
-scoreboard objectives add 60 dummy
-scoreboard players set stats 60 60
-
-scoreboard objectives add 20 dummy
-scoreboard players set stats 20 20
+scoreboard objectives add constants dummy
+scoreboard players set .60 constants 60
+scoreboard players set .20 constants 20
+scoreboard players set .10 constants 10
 
 scoreboard objectives add paused dummy
 scoreboard players set stats paused 0
@@ -115,6 +114,14 @@ scoreboard objectives add ammo_mag_pistol dummy
 scoreboard objectives add ammo_loaded_mp5 dummy
 scoreboard objectives add ammo_mag_mp5 dummy
 
+scoreboard objectives add x_10 dummy
+scoreboard objectives add y_10 dummy
+scoreboard objectives add z_10 dummy
+
+scoreboard objectives add x_10_rounded dummy
+scoreboard objectives add y_10_rounded dummy
+scoreboard objectives add z_10_rounded dummy
+
 #shops ----------------------------
 scoreboard objectives add shopping dummy
 
@@ -138,3 +145,4 @@ scoreboard objectives add points dummy "Points"
 scoreboard objectives add points_display dummy "Points"
 
 scoreboard objectives setdisplay list points_display
+

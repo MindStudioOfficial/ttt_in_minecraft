@@ -1,0 +1,1253 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "east",
+                                "half": "bottom",
+                                "shape": "straight"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_west"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "east",
+                                "half": "bottom",
+                                "shape": "inner_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_west"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_south"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "east",
+                                "half": "bottom",
+                                "shape": "inner_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_west"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_north"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "east",
+                                "half": "bottom",
+                                "shape": "outer_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_west"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_south"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "east",
+                                "half": "bottom",
+                                "shape": "outer_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_west"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_north"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "west",
+                                "half": "bottom",
+                                "shape": "straight"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_east"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "west",
+                                "half": "bottom",
+                                "shape": "inner_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_east"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_north"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "west",
+                                "half": "bottom",
+                                "shape": "inner_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_east"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_south"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "west",
+                                "half": "bottom",
+                                "shape": "outer_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_east"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_north"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "west",
+                                "half": "bottom",
+                                "shape": "outer_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_east"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_south"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "north",
+                                "half": "bottom",
+                                "shape": "straight"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_south"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "north",
+                                "half": "bottom",
+                                "shape": "inner_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_south"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_east"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "north",
+                                "half": "bottom",
+                                "shape": "inner_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_south"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_west"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "north",
+                                "half": "bottom",
+                                "shape": "outer_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_south"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_east"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "north",
+                                "half": "bottom",
+                                "shape": "outer_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_south"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_west"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "south",
+                                "half": "bottom",
+                                "shape": "straight"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_north"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "south",
+                                "half": "bottom",
+                                "shape": "inner_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_north"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_west"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "south",
+                                "half": "bottom",
+                                "shape": "inner_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_north"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_east"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "south",
+                                "half": "bottom",
+                                "shape": "outer_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_north"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_west"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "south",
+                                "half": "bottom",
+                                "shape": "outer_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_north"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_east"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "east",
+                                "half": "top",
+                                "shape": "straight"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_west"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "east",
+                                "half": "top",
+                                "shape": "inner_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_west"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_south"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "east",
+                                "half": "top",
+                                "shape": "inner_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_west"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_north"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "east",
+                                "half": "top",
+                                "shape": "outer_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_west"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_south"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "east",
+                                "half": "top",
+                                "shape": "outer_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_west"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_north"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "west",
+                                "half": "top",
+                                "shape": "straight"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_east"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "west",
+                                "half": "top",
+                                "shape": "inner_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_east"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_north"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "west",
+                                "half": "top",
+                                "shape": "inner_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_east"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_south"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "west",
+                                "half": "top",
+                                "shape": "outer_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_east"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_north"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "west",
+                                "half": "top",
+                                "shape": "outer_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_east"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_south"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "north",
+                                "half": "top",
+                                "shape": "straight"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_south"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "north",
+                                "half": "top",
+                                "shape": "inner_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_south"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_east"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "north",
+                                "half": "top",
+                                "shape": "inner_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_south"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_west"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "north",
+                                "half": "top",
+                                "shape": "outer_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_south"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_east"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "north",
+                                "half": "top",
+                                "shape": "outer_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_south"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_west"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "south",
+                                "half": "top",
+                                "shape": "straight"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_north"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "south",
+                                "half": "top",
+                                "shape": "inner_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_north"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_west"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "south",
+                                "half": "top",
+                                "shape": "inner_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_north"
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_east"
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "south",
+                                "half": "top",
+                                "shape": "outer_left"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_north"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_west"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "state": {
+                                "facing": "south",
+                                "half": "top",
+                                "shape": "outer_right"
+                            },
+                            "tag": "stairs"
+                        }
+                    }
+                },
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_north"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_half_east"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

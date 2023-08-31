@@ -1,9 +1,9 @@
 title @a times 0s 1s 0s
 
 scoreboard players operation stats rtseconds = stats roundtime
-scoreboard players operation stats rtseconds %= stats 60
+scoreboard players operation stats rtseconds %= .60 constants
 scoreboard players operation stats rtminutes = stats roundtime
-scoreboard players operation stats rtminutes /= stats 60
+scoreboard players operation stats rtminutes /= .60 constants
 
 execute if score stats rtseconds matches ..9 run scoreboard players set stats rtzero 0
 execute if score stats rtseconds matches 10.. run scoreboard players reset stats rtzero

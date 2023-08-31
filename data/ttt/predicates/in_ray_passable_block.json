@@ -1,8 +1,17 @@
 {
-    "condition": "minecraft:location_check",
-    "predicate": {
-        "block": {
-            "tag": "ttt:ray_passable"
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "minecraft:location_check",
+            "predicate": {
+                "block": {
+                    "tag": "ttt:ray_passable"
+                }
+            }
+        },
+        {
+            "condition": "reference",
+            "name": "ttt:in_unobstructed_block_quadrant"
         }
-    }
+    ]
 }

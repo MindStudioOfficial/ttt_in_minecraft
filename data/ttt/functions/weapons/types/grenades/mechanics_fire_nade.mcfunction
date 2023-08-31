@@ -19,7 +19,7 @@ execute at @e[tag=primed_fire,scores={grenadetime=40..}] run particle minecraft:
 
     #* damage players in range every second
 execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. run scoreboard players operation @s i = @s grenadetime
-execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. run scoreboard players operation @s i %= stats 20
+execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. run scoreboard players operation @s i %= .20 constants
 execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. if score @s i matches 0 positioned ~ ~1 ~ as @a[distance=..3,predicate=ttt:alive_player] run damage @s 3 minecraft:in_fire at ~ ~ ~
 execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. if score @s i matches 0 positioned ~ ~1 ~ as @a[distance=..3,predicate=ttt:alive_player] run scoreboard players set @s damage 3
 

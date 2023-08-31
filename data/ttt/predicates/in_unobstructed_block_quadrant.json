@@ -1,0 +1,13 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "ttt:in_unobstructed_slab_half"
+        },
+        {
+            "condition": "reference",
+            "name": "ttt:in_unobstructed_stair_quadrant"
+        }
+    ]
+}

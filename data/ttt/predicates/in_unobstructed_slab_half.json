@@ -1,0 +1,45 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_bottom"
+                },
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "tag": "slabs",
+                            "state": {
+                                "type": "top"
+                            }
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "reference",
+                    "name": "ttt:in_half_top"
+                },
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "tag": "slabs",
+                            "state": {
+                                "type": "bottom"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

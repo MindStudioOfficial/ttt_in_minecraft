@@ -3,7 +3,7 @@ execute as @e[tag=c4] at @s unless entity @s[scores={c4time=1..}] run scoreboard
 #* decrease c4 by 1 every tick
 execute as @e[tag=c4,scores={c4time=1..}] at @s run scoreboard players remove @s c4time 1
 execute as @e[tag=c4] run scoreboard players operation @s c4seconds = @s c4time
-execute as @e[tag=c4] run scoreboard players operation @s c4seconds /= stats 20
+execute as @e[tag=c4] run scoreboard players operation @s c4seconds /= .20 constants
 
 #* change c4 model
 execute as @e[tag=c4,scores={c4seconds=30}] unless entity @s[nbt={item.tag.CustomModelData: 30}] run data modify entity @s item.tag.CustomModelData set value 30
@@ -40,7 +40,7 @@ execute as @e[tag=c4,scores={c4seconds=0}] unless entity @s[nbt={item.tag.Custom
 
 #* play sound every second
 execute as @e[tag=c4,scores={c4time=1..}] run scoreboard players operation @s value = @s c4time
-execute as @e[tag=c4,scores={c4time=1..}] run scoreboard players operation @s value %= stats 20
+execute as @e[tag=c4,scores={c4time=1..}] run scoreboard players operation @s value %= .20 constants
 execute as @e[tag=c4,scores={c4time=1..}] at @s if score @s value matches 0 run playsound minecraft:block.note_block.bit player @a ~ ~ ~ .2 2 .05
 
 
