@@ -45,9 +45,4 @@ execute as @e[tag=c4,scores={c4time=1..}] at @s if score @s value matches 0 run 
 
 
 #* BOOM
-execute as @e[tag=c4,scores={c4time=..0}] at @s run playsound entity.generic.explode player @a ~ ~ ~ 1 1 .1
-execute as @e[tag=c4,scores={c4time=..0}] at @s run particle explosion ~ ~ ~ 2 2 2 1 100 force
-execute as @e[tag=c4,scores={c4time=..0}] at @s run execute at @a[distance=0..10] run damage @p 100 generic
-execute as @e[tag=c4,scores={c4time=..0}] at @s run execute at @a[distance=10..20] run damage @p 18 generic
-execute as @e[tag=c4,scores={c4time=..0}] at @s run execute at @a[distance=20..40] run damage @p 5 generic
-execute as @e[tag=c4,scores={c4time=..0}] at @s run kill @s
+execute as @e[tag=c4,scores={c4time=..0}] at @s run function ttt:other/c4/c4_explode

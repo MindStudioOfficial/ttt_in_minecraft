@@ -6,4 +6,4 @@ function ttt:weapons/damage_indicator_tick
 function ttt:weapons/ammo_tick
 
 function ttt:weapons/types/grenades/grenade_mechanics
-function ttt:weapons/types/c4
+function ttt:other/c4/c4_tick
