@@ -8,6 +8,10 @@
         {
             "condition": "reference",
             "name": "ttt:in_unobstructed_stair_quadrant"
+        },
+        {
+            "condition": "reference",
+            "name": "ttt:in_unobstructed_door_part"
         }
     ]
 }
