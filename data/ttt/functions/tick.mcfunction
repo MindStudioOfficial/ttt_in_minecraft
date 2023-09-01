@@ -25,3 +25,5 @@ kill @e[type=minecraft:experience_orb]
 function ttt:spawner_remove
 
 function ttt:update_tdoor
+
+function ttt:other/explosive_barrel/exp_tick

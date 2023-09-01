@@ -25,5 +25,7 @@ give @s[team=admin] ghast_spawn_egg{display: {Name: '{"text":"Add Breakable Glas
 #* traitor door
 give @s[team=admin] wolf_spawn_egg{display: {Name: '{"text":"Add Traitor Door Spawner"}'}, spawner: 1b, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["tdoor", "spawner"], CustomName: '{"text":"Traitor Door Spawner","color":"gold"}'}} 1
 
+give @s[team=admin] creeper_spawn_egg{display: {Name: '{"text":"Add Explosive Barrel Spawner"}'}, spawner: 1b, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["explosive_barrel", "spawner"], CustomName: '{"text":"Explosive Barrel Spawner","color":"gold"}'}} 1
+
 #* remove
 give @s[team=admin] spider_spawn_egg{display: {Name: '{"text":"Remove Any Spawner"}'}, HideFlags: 1, removespawner: 1b, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["removespawner"], CustomName: '{"text":"Spawner Remover","color":"gold"}'}} 1
