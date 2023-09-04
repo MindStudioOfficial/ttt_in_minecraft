@@ -5,13 +5,6 @@
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-                "team": "innocent"
-            }
-        },
-        {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
                 "team": "conf_innocent"
             }
         },
@@ -19,7 +12,7 @@
             "condition": "entity_properties",
             "entity": "this",
             "predicate": {
-                "team": "detective"
+                "team": "conf_traitor"
             }
         },
         {

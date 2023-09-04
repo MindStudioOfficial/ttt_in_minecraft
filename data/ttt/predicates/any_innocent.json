@@ -14,20 +14,6 @@
             "predicate": {
                 "team": "conf_innocent"
             }
-        },
-        {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-                "team": "detective"
-            }
-        },
-        {
-            "condition": "entity_properties",
-            "entity": "this",
-            "predicate": {
-                "team": "conf_detective"
-            }
         }
     ]
 }

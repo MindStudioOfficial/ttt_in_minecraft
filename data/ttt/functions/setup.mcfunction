@@ -45,6 +45,7 @@ execute at @e[tag=sign] run setblock ~ ~ ~ oak_sign
 #death and corpse
 scoreboard objectives add tod deathCount
 scoreboard objectives add sneak minecraft.custom:minecraft.sneak_time
+scoreboard objectives add isBeingConfirmed dummy
 
 #roundtime -----------------------
 scoreboard objectives add roundtime dummy

@@ -1,3 +1,2 @@
-scoreboard players set stats innocentcount 0
-execute as @a[team=innocent,gamemode=adventure] run scoreboard players add stats innocentcount 1
-execute as @a[team=detective,gamemode=adventure] run scoreboard players add stats innocentcount 1
+#* counts alive innocents/detectives confirmed/unconfirmed
+execute store result score stats innocentcount if entity @a[predicate=ttt:in_any_innocent_team_alive]

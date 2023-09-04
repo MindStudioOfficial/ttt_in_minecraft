@@ -1,7 +1,19 @@
-execute as @a[scores={sneak=1..},gamemode=!spectator] at @s unless entity @e[tag=head,tag=!confirmed,distance=..2] run scoreboard players set @s sneak 0
+#! run as and at the confirming player
 
-execute at @a[scores={sneak=10..},gamemode=!spectator] run data merge entity @e[tag=head,tag=!confirmed,limit=1,sort=nearest] {CustomNameVisible: 1b}
-execute as @a[scores={sneak=10..},gamemode=!spectator] at @s run tellraw @a ["",{"selector":"@s","color":"gray","bold":true},{"text":" found the body of ","color":"white","bold":false},{"selector":"@e[tag=head,tag=!confirmed,limit=1,sort=nearest]","color":"none"}]
-execute at @a[scores={sneak=10..},gamemode=!spectator] run tag @e[tag=head,limit=1,sort=nearest] add confirmed
+#* make the dead players name text visible
+data modify entity @e[tag=dead_name_display,tag=!confirmed,limit=1,sort=nearest] text_opacity set value 255
 
-execute as @a[scores={sneak=10..}] run scoreboard players set @s sneak 0
+#* print the confirmation message
+tellraw @a [{"selector":"@s","color":"gray","bold":true},{"text":" found the body of ","color":"white","bold":false},{"nbt":"text","entity":"@e[tag=dead_name_display,tag=!confirmed,limit=1,sort=nearest]","interpret": true}]
+
+tag @e[tag=head,tag=!confirmed,limit=1,sort=nearest] add confirming
+
+execute as @a[predicate=ttt:any_player] run function ttt:death/check_if_my_body
+
+tag @e[tag=head,tag=!confirmed,limit=1,sort=nearest] remove confirming
+
+#* mark as confirmed
+tag @e[tag=dead_name_display,tag=!confirmed,limit=1,sort=nearest] add confirmed
+tag @e[tag=head,tag=!confirmed,limit=1,sort=nearest] add confirmed
+
+scoreboard players set @s sneak 0

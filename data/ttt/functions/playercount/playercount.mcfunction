@@ -1,2 +1,2 @@
-scoreboard players set stats playercount 0
-execute as @a[predicate=ttt:any_player] run scoreboard players add stats playercount 1
+#* counts any player (!=admin) alive/dead confirmed/unconfirmed
+execute store result score stats playercount if entity @a[predicate=ttt:any_player]

@@ -1,7 +1,7 @@
 #COMMANDS IN THIS FUNCTION ARE TICKED 20 TIMES A SECOND
 
 function ttt:death/checkdeath
-function ttt:death/confirm
+function ttt:death/confirm_tick
 function ttt:round/_round_timer
 function ttt:update_title
 function ttt:playercount/innocentcount

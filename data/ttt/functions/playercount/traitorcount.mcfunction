@@ -1,2 +1,2 @@
-scoreboard players set stats traitorcount 0
-execute as @a[team=traitor,gamemode=adventure] run scoreboard players add stats traitorcount 1
+#* counts all alive traitors confirmed/unconfirmed
+execute store result score stats traitorcount if entity @a[predicate=ttt:any_traitor,gamemode=adventure]

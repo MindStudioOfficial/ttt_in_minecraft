@@ -35,6 +35,10 @@
             "predicate": {
                 "team": "roundover"
             }
+        },
+        {
+            "condition": "reference",
+            "name": "ttt:confirmed_player"
         }
     ]
 }
