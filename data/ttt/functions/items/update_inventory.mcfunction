@@ -3,4 +3,4 @@ execute as @a[team=detective] unless entity @s[nbt={Inventory: [{tag: {d_vest: 1
 
 #* give everyone a sword
 
-execute as @a[predicate=ttt:alive_player] unless entity @s[nbt={Inventory: [{tag: {sword: 1b}}]}] run item replace entity @s hotbar.0 with wooden_sword{display: {Name: '{"text":"Sword","color":"gold","bold":true}', Lore: ['{"text":"... for close combat."}']}, HideFlags: 255, Unbreakable: 1b, sword: 1b, CustomModelData: 534} 1
+execute as @a[predicate=ttt:alive_player] unless entity @s[nbt={Inventory: [{tag: {sword: 1b}}]}] unless entity @e[nbt={Item: {tag: {sword: 1b}}},distance=..1] run item replace entity @s hotbar.0 with wooden_sword{display: {Name: '{"text":"Sword","color":"gold","bold":true}', Lore: ['{"text":"... for close combat."}']}, HideFlags: 255, Unbreakable: 1b, sword: 1b, CustomModelData: 534, NoDrop: 1b} 1

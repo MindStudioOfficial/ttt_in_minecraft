@@ -146,3 +146,6 @@ scoreboard objectives add points_display dummy "Points"
 
 scoreboard objectives setdisplay list points_display
 
+#items -----------------------------
+
+scoreboard objectives add itemage dummy

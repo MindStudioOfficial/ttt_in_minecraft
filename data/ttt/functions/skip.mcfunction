@@ -1,0 +1,1 @@
+scoreboard players set stats roundtime 1

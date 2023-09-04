@@ -13,7 +13,7 @@ function ttt:round/check_win
 function ttt:weapons/tickweapons
 function ttt:roles/tickroles
 
-function ttt:update_inventory
+function ttt:items/items_tick
 
 function ttt:spawner_highlight
 
