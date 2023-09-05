@@ -12,6 +12,10 @@
         {
             "condition": "reference",
             "name": "ttt:in_unobstructed_door_part"
+        },
+        {
+            "condition": "reference",
+            "name": "ttt:in_unobstructed_fence_part"
         }
     ]
 }

@@ -1,0 +1,39 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "all_of",
+            "terms": [
+                {
+                    "condition": "location_check",
+                    "predicate": {
+                        "block": {
+                            "tag": "fences"
+                        }
+                    }
+                },
+                {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_.4_east"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_.4_south"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_.4_west"
+                        },
+                        {
+                            "condition": "reference",
+                            "name": "ttt:in_.4_north"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
