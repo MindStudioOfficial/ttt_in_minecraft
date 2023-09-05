@@ -1,5 +1,10 @@
 #COMMANDS IN THIS FUNCTION ARE TICKED 20 TIMES A SECOND
 
+#* tick once every second
+scoreboard players add global i 1
+execute if score global i matches 20.. run function ttt:tick_one_second
+execute if score global i matches 20.. run scoreboard players set global i 0
+
 function ttt:death/checkdeath
 function ttt:death/confirm_tick
 function ttt:round/_round_timer

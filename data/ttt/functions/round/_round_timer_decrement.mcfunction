@@ -1,0 +1,1 @@
+execute if score stats paused matches 0 run scoreboard players remove stats roundtime 1

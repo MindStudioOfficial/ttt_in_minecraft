@@ -1,0 +1,60 @@
+{
+    "condition": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "x": {
+            "min": {
+                "type": "score",
+                "target": {
+                    "type": "fixed",
+                    "name": ".corner1"
+                },
+                "score": "x"
+            },
+            "max": {
+                "type": "score",
+                "target": {
+                    "type": "fixed",
+                    "name": ".corner2"
+                },
+                "score": "x"
+            }
+        },
+        "y": {
+            "min": {
+                "type": "score",
+                "target": {
+                    "type": "fixed",
+                    "name": ".corner1"
+                },
+                "score": "y"
+            },
+            "max": {
+                "type": "score",
+                "target": {
+                    "type": "fixed",
+                    "name": ".corner2"
+                },
+                "score": "y"
+            }
+        },
+        "z": {
+            "min": {
+                "type": "score",
+                "target": {
+                    "type": "fixed",
+                    "name": ".corner1"
+                },
+                "score": "z"
+            },
+            "max": {
+                "type": "score",
+                "target": {
+                    "type": "fixed",
+                    "name": ".corner2"
+                },
+                "score": "z"
+            }
+        }
+    }
+}

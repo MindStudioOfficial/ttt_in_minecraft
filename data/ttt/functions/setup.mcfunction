@@ -123,6 +123,10 @@ scoreboard objectives add x_10_rounded dummy
 scoreboard objectives add y_10_rounded dummy
 scoreboard objectives add z_10_rounded dummy
 
+scoreboard objectives add x dummy
+scoreboard objectives add y dummy
+scoreboard objectives add z dummy
+
 #shops ----------------------------
 scoreboard objectives add shopping dummy
 

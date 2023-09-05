@@ -1,9 +1,3 @@
-#* tick timer if not paused
-execute unless score stats paused matches 0.. run scoreboard players set stats paused 0
-execute if score stats paused matches 0 run scoreboard players add stats i 1
-execute if score stats paused matches 0 if score stats i matches 20.. run scoreboard players remove stats roundtime 1
-execute if score stats paused matches 0 if score stats i matches 20.. run scoreboard players set stats i 0
-
 #*roundstages: 0=start preparing, 1=preparing, 2=start round, 3=running, 4=end round, 5=round over
 
 #* 0 -> 1
