@@ -154,3 +154,8 @@ scoreboard objectives setdisplay list points_display
 #items -----------------------------
 
 scoreboard objectives add itemage dummy
+
+#teleporter ------------------------
+scoreboard objectives add tp_cooldown dummy
+scoreboard objectives add tp_count dummy
+scoreboard objectives add tp_id dummy

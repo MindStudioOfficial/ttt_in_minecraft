@@ -33,3 +33,4 @@ function ttt:update_tdoor
 
 function ttt:other/explosive_barrel/exp_tick
 function ttt:other/magneto/magn_tick
+function ttt:other/teleporter/tp_tick
