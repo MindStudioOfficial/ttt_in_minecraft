@@ -39,9 +39,9 @@ execute as @e[tag=c4,scores={c4seconds=1}] unless entity @s[nbt={item.tag.Custom
 execute as @e[tag=c4,scores={c4seconds=0}] unless entity @s[nbt={item.tag.CustomModelData: 0}] run data modify entity @s item.tag.CustomModelData set value 0
 
 #* play sound every second
-execute as @e[tag=c4,scores={c4time=1..}] run scoreboard players operation @s value = @s c4time
-execute as @e[tag=c4,scores={c4time=1..}] run scoreboard players operation @s value %= .20 constants
-execute as @e[tag=c4,scores={c4time=1..}] at @s if score @s value matches 0 run playsound minecraft:block.note_block.bit player @a ~ ~ ~ .2 2 .05
+execute as @e[tag=c4,scores={c4time=1..}] run scoreboard players operation @s c4tick = @s c4time
+execute as @e[tag=c4,scores={c4time=1..}] run scoreboard players operation @s c4tick %= .20 constants
+execute as @e[tag=c4,scores={c4time=1..}] at @s if score @s c4tick matches 0 run playsound minecraft:block.note_block.bit player @a ~ ~ ~ .5 2 .05
 
 
 #* BOOM

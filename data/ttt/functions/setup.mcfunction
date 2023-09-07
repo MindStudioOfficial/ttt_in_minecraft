@@ -137,6 +137,7 @@ scoreboard objectives add throw minecraft.used:minecraft.snowball
 #c4 --------------------------------
 scoreboard objectives add c4time dummy
 scoreboard objectives add c4seconds dummy
+scoreboard objectives add c4tick dummy
 
 #radar -----------------------------
 scoreboard objectives add radartime dummy

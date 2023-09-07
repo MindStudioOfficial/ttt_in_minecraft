@@ -3,7 +3,7 @@ execute at @a[predicate=ttt:alive_player,distance=1..,limit=1,sort=random] run s
 
 #* teleport the target player to you
 execute at @e[tag=swapto,limit=1,sort=nearest] run tellraw @s [{"text": "Swapping with ", "color": "dark_aqua"} ,{"selector":"@p"}]
-execute at @e[tag=swapto,limit=1,sort=nearest] run tp @p @s
+execute if entity @s[predicate=ttt:alive_player] at @e[tag=swapto,limit=1,sort=nearest] run tp @p @s
 
 #* teleport you to the target players marked position
 tp @s @e[tag=swapto,limit=1,sort=nearest]
