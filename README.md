@@ -54,8 +54,16 @@ Run `/function ttt:admin` to get the spawner items.
 - Place grenade spawner
 - Place player spawnpoints
 - Place breakable glass spawner (replaces glass panes at start of round)
-- Place Traitor Doors spawner (place spawner on block below iron_door)
+- Place traitor doors spawner (place spawner on block below iron_door)
 - Remove any spawner (hold this to visualize spawners)
+- Place teleporter (two will link together, max 12 pairs)
+- Place explosive barrel (will explode when shot, by other barrel, by c4 and by fire grenade)
+- Place minecart that can be carried around like with a magneto stick.
+- Mark death zone corners (North-West-Bottom and South-East-Top), players will get damage over time when inside
+- Mark mineable block (blocks that can be destroyed with leftclick)
+  Run `function ttt:other/mineable/mine_summon` to convert actual blocks inside the spawner to fake blocks that can be destroyed with leftclick.
+  At the start of every round `function ttt:other/mineable/mine_reset` will be run to reset all fake blocks that have been destroyed.
+  Blocks that can be converted are hardcoded in `data/ttt/functions/other/mineable/mine_replace.mcfunction`
 
 Run `/function ttt:noadmin` to remove the items and remove the `admin` team.
 

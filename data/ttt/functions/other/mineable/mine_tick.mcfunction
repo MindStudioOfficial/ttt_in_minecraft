@@ -1,0 +1,1 @@
+execute as @e[tag=mine_interaction] run function ttt:other/mineable/mine_tick_interact

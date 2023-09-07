@@ -41,5 +41,8 @@ give @s[team=admin] strider_spawn_egg{display: {Name: '{"text":"Add Deathzone Co
 #* teleporter
 give @s[team=admin] shulker_spawn_egg{display: {Name: '{"text":"Add Teleporter"}'}, spawner: 1b, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["tp", "spawner"], CustomName: '{"text":"Teleporter","color":"purple"}'}} 1
 
+#* mineable
+give @s[team=admin] mule_spawn_egg{display: {Name: '{"text":"Add Mineable Block"}'}, spawner: 1b, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["mineable_spawner", "spawner"], CustomName: '{"text":"Mineable Block","color":"gold"}'}} 1
+
 #* remove
 give @s[team=admin] spider_spawn_egg{display: {Name: '{"text":"Remove Any Spawner"}'}, HideFlags: 1, removespawner: 1b, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["removespawner"], CustomName: '{"text":"Spawner Remover","color":"gold"}'}} 1
