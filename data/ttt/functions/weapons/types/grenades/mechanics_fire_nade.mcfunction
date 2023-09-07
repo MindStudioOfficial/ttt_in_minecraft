@@ -23,7 +23,7 @@ execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. run sc
 execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. if score @s i matches 0 positioned ~ ~1 ~ as @a[distance=..3,predicate=ttt:alive_player] run damage @s 3 minecraft:in_fire at ~ ~ ~
 execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. if score @s i matches 0 positioned ~ ~1 ~ as @a[distance=..3,predicate=ttt:alive_player] run scoreboard players set @s damage 3
 
-execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. if score @s i matches 0 as @e[tag=tnt_physics,distance=..3] at @s run function ttt:other/explosive_barrel/exp_start_explode
+execute as @e[tag=primed_fire] at @s if score @s grenadetime matches 40.. if score @s i matches 0 as @e[tag=exp_barrel,distance=..3] at @s run function ttt:other/explosive_barrel/exp_start_explode
 
 execute as @a[scores={damage=1..}] at @s positioned ^ ^1 ^.5 run function ttt:weapons/damage_indicator_summon
 execute as @a[scores={damage=1..}] run scoreboard players reset @s damage

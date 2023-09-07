@@ -12,6 +12,7 @@ clear @a[predicate=ttt:any_player]
 function ttt:weapons/remove_pickup_items
 function ttt:weapons/summon_pickup_items
 function ttt:other/explosive_barrel/exp_summon
+function ttt:other/minecart/minecart_summon
 
 effect give @e[predicate=ttt:any_player] minecraft:regeneration 30 100 true
 

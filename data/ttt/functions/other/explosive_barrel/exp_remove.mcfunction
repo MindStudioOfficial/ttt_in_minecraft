@@ -1,1 +1,1 @@
-kill @e[tag=tnt]
+kill @e[tag=exp]

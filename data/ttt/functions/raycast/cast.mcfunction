@@ -21,7 +21,7 @@ execute positioned ~ ~-.5 ~ if entity @e[tag=glass,distance=...6] run execute at
 execute positioned ~ ~-1.5 ~ if entity @e[tag=glass,distance=...6] run execute at @e[tag=glass,limit=1,sort=nearest] run fill ~ ~ ~ ~ ~1 ~ air destroy
 
 #* Explode Barrel
-execute positioned ~ ~-.75 ~ as @e[tag=tnt_physics,distance=...7] at @s run function ttt:other/explosive_barrel/exp_start_explode
+execute positioned ~ ~-.75 ~ as @e[tag=exp_barrel,distance=...7] at @s run function ttt:other/explosive_barrel/exp_start_explode
 
 #* update block relative position
 function ttt:raycast/detect_cast_block_quadrant

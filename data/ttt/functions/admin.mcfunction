@@ -27,7 +27,10 @@ give @s[team=admin] ghast_spawn_egg{display: {Name: '{"text":"Add Breakable Glas
 give @s[team=admin] wolf_spawn_egg{display: {Name: '{"text":"Add Traitor Door Spawner"}'}, spawner: 1b, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["tdoor", "spawner"], CustomName: '{"text":"Traitor Door Spawner","color":"gold"}'}} 1
 
 #* explosive barrel
-give @s[team=admin] creeper_spawn_egg{display: {Name: '{"text":"Add Explosive Barrel Spawner"}'}, spawner: 1b, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["explosive_barrel", "spawner"], CustomName: '{"text":"Explosive Barrel Spawner","color":"gold"}'}} 1
+give @s[team=admin] creeper_spawn_egg{display: {Name: '{"text":"Add Explosive Barrel Spawner"}'}, spawner: 1b, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["exp_barrel_spawner", "spawner"], CustomName: '{"text":"Explosive Barrel Spawner","color":"gold"}'}} 1
+
+#* minecart
+give @s[team=admin] skeleton_horse_spawn_egg{display: {Name: '{"text":"Add grabable Minecart Spawner"}'}, spawner: 1b, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["minecart_spawner", "spawner"], CustomName: '{"text":"Minecart Spawner","color":"gold"}'}} 1
 
 #* death zone corner North West Bottom
 give @s[team=admin] strider_spawn_egg{display: {Name: '{"text":"Add Deathzone Corner North West Bottom"}'}, spawner: 1b, HideFlags: 1, Enchantments: [{id: "minecraft:protection", lvl: 1s}], EntityTag: {id: "minecraft:marker", Tags: ["dz_corner_1", "spawner"], CustomName: '{"text":"Deathzone Corner North West Bottom","color":"dark_red"}'}} 1

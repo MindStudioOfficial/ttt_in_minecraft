@@ -10,8 +10,8 @@ execute as @a[distance=5..10,predicate=ttt:alive_player] run damage @s 5 generic
 execute as @a[scores={damage=1..}] at @s positioned ^ ^-.2 ^-.5 run function ttt:weapons/damage_indicator_summon
 
 #* ignite other explosives in area
-execute as @e[tag=tnt_physics,distance=..3] at @s run function ttt:other/explosive_barrel/exp_start_explode
+execute as @e[tag=exp_barrel,distance=..3] at @s run function ttt:other/explosive_barrel/exp_start_explode
 
-kill @e[tag=tnt_display,sort=nearest,limit=1]
-kill @e[tag=tnt_interaction,sort=nearest,limit=1]
+kill @e[tag=exp_display,sort=nearest,limit=1]
+kill @e[tag=exp_interaction,sort=nearest,limit=1]
 kill @s
